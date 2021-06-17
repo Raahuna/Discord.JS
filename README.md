@@ -1,4 +1,4 @@
-# DISCORD JS ANLATIM ŞEYSİ
+# DISCORD JS ANLATIM ŞEYSİ 🤓
 
 ## Emojiler & Tepkiler
 
