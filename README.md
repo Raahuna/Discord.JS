@@ -61,5 +61,38 @@ client.on('message', message => {
 ## Rastgele Seçim Uygulamak 
 
 > ### Yazılanlardan rastgele birini seçmek
+  ```
+  var cat = [
+   "Pofuduk Kedi",
+   "Şişman Kedi",
+   "Vahşi Kedi",
+  ];
+  
+  var cat_name = cat[Math.floor(Math.random(1) * cat.length)]
+  ```
+  *Yukarıda yazılan **"cat"** isimli kategori oluşturduktan sonra içine **"Pofuduk Kedi"**, **"Şişman Kedi"** ve **"Vahşi Kedi"** elemanlarını ekledik.*
+  
+![cat_random](https://cdn.discordapp.com/attachments/833692291230072872/855399272214954054/Ekran_goruntusu_2021-06-18_134743.png)
 
-🥱 Çok yoruldum yarın anlatacağım.
+```
+client.on('message', message => {
+    var cat = [
+        "Pofuduk Kedi",
+        "Şişman Kedi",
+        "Vahşi Kedi",
+       ];
+       
+       var cat_name = cat[Math.floor(Math.random(1) * cat.length)]
+
+       if(message.content === 'Hey Natez! Sence ben nasıl bir kedi severim?'){
+       message.channel.send(`${cat_name}`)
+       }
+       if(message.content === 'Tekrar denemek ister misin?') {
+       message.channel.send(`${cat_name}`)
+       }
+})
+```
+  
+  
+  
+  
