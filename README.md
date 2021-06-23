@@ -16,6 +16,8 @@ message.guild.emojis
 
 - **Bunu kopyalamak için bir emojiye **sağ** tıklayıp "Bağlantıyı Kopyala" seçeneğine tıklayınız.**
 
+![add_emoji](https://user-images.githubusercontent.com/80279532/122451759-2e6d2d00-cfb1-11eb-865b-814b907ada07.png)
+
 ```
 client.on('message', message => {
     if (message.content === 'Hey Natez! Bu sunucuya güzel bir emoji ekler misin?') {
@@ -25,8 +27,6 @@ client.on('message', message => {
     }
 });
 ```
-
-![add_emoji](https://user-images.githubusercontent.com/80279532/122451759-2e6d2d00-cfb1-11eb-865b-814b907ada07.png)
 
 > ### Tepki Eklemek
 ```
