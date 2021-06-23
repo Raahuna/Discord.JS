@@ -10,7 +10,7 @@ message.guild.emojis
   
   *Bu şekilde kullanılır **emoji_link** yerine bir emoji linki ve **emoji_name** yerinede eklenecek emojinin isimini yazınız.*
   
-📌  **NOT: Emoji linkleri şu şekildedir => https://cdn.discordapp.com/emojis/751979651340959774.png?v=1**
+📌  *NOT: Emoji linkleri şu şekildedir => **https://cdn.discordapp.com/emojis/751979651340959774.png?v=1***
 
 ![get_emoji_link](https://cdn.discordapp.com/attachments/833692291230072872/855119180868747324/Ekran_goruntusu_2021-06-17_191752.png)
 
@@ -129,6 +129,6 @@ client.on('message', message => {
     })
   ```
   
-  📌  **NOT: Az önceki kodda kullandığımız \n satır atlamaya yarar. "ctrl + alt + *" ile ters slash (\) koyabilirsiniz. Normal bir kodda "" veya '' içinde satır atlayamazsınız. istediğiniz gibi yazabilmeniz için "ctrl + alt + ," içine yazarakta bunu yapabilirsiniz. Ayrıca tanıttıktan sonra onu kullanmak için yazdığımız ${} sadece ` içerisinde iken çalışır**
+  📌  *NOT: Az önceki kodda kullandığımız \n satır atlamaya yarar. **"ctrl + alt + \*"** ile ters slash (\) koyabilirsiniz. Diğer kesme işaretleri içinde (**"** veya **'**) içinde satır atlayamazsınız. İtediğiniz gibi yazabilmeniz için "ctrl + alt + ," içine yazarakta bunu yapabilirsiniz. Ayrıca tanıttıktan sonra onu kullanmak için yazdığımız ${} sadece \` içerisinde iken çalışır.*
   
   
