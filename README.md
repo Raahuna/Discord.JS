@@ -92,7 +92,32 @@ client.on('message', message => {
        }
 })
 ```
+  ### Seçime göre değişiklik yapmak
   
+  ![cat_info] (https://cdn.discordapp.com/attachments/833692291230072872/857141423770173460/unknown.png)
+  
+  ```
+  client.on('message', message => {
+    var cat = [
+        "Pofuduk Kedi",
+        "Şişman Kedi",
+        "Vahşi Kedi",
+       ];
+       
+       var cat_name = cat[Math.floor(Math.random(1) * cat.length)]
+
+       if(cat_name === 'Pofuduk Kedi') { var cat_info = 'Scottish fold kedilerin erkekleri genellikle 4-6, dişileri ise 2,7-4 kilo ağırlıktadır. Tüyleri kısadır, ancak Scottish fold longhair isimli uzun tüylü bir türü de vardır. Tüyleri çok çeşitli renklerde olabilir. Bu ırkta görülen tüy renkleri arasında tekir, tekir-beyaz, iki renkli, krem, duman, portakal sayılabilir.' }
+       if(cat_name === 'Şişman Kedi') { var cat_info = 'Hey şişman kedi diye bir tür yoktur bunu sen uydurdun!' }
+       if(cat_name === 'Vahşi Kedi') { var cat_info = 'Yetişkin bir aslanın ısırığı, herhangi bir ev kedisinin ısırığından 30 kat daha güçlüdür. Aslanlar hayatı boyunca ortalama 3.000 kez çiftleşir. Bir aslan 3 metre boya kadar ulaşabilir. Aslanlar, her gün en az 10 saat uyumaktadır' }
+
+       if(message.content === 'Hey Natez! Bir kedi hakkında bilgi verir misin?'){
+       message.channel.send(`**${cat_name}**\n${cat_info}`)
+       }
+       if(message.content === 'Teşekkürler, bir tane daha kedi hakkında bilgi verir misin?'){
+        message.channel.send(`**${cat_name}**\n${cat_info}`)
+        }
+    })
+  ```
   
   
   
