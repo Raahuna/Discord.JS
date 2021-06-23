@@ -94,7 +94,7 @@ client.on('message', message => {
 ```
   ### Seçime göre değişiklik yapmak
   
-  ![cat_info] (https://cdn.discordapp.com/attachments/833692291230072872/857141423770173460/unknown.png)
+  ![cat_info](https://cdn.discordapp.com/attachments/833692291230072872/857141423770173460/unknown.png)
   
   ```
   client.on('message', message => {
