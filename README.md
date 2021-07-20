@@ -16,35 +16,35 @@
   
   *Bu şekilde kullanılır, **TitleMessage** yerine ne yazarsanız mesaj başlığı o olur.*
   
-    > ### Açıklama
+   > ### Açıklama
 ```
-.setDescription(`DescriptionMessage`)
+.setDescription('DescriptionMessage')
   ```
   
   *Bu şekilde kullanılır, **DescriptionMessage** yerine ne yazarsanız mesaj açıklaması o olur.*
   
-      > ### Afiş
+  > ### Afiş
 ```
 .setImage('ImageURL')
   ```
   
   *Bu şekilde kullanılır, **ImageURL** yerine istediğiniz bir görselin linkini yazınız, en alta o resim eklenir.*
   
-        > ### Görsel
+  > ### Görsel
 ```
 .setThumbnail('ImageURL')
   ```
   
   *Bu şekilde kullanılır, **ImageURL** yerine istediğiniz bir görselin linkini yazınız sağ üste o resimin küçük hali eklenir.*
   
-        > ### Alt yazı
+  > ### Alt yazı
 ```
 .setFooter('FooterMessage','FooterIconURL')
   ```
   
   *Bu şekilde kullanılır, **FooterMessage** yerine istediğiniz bir mesajı, FooterIconURL yazan yere istediğiniz bir fotoğrafın linkini yazınız bu sizin alt yazınızdaki görseliniz ve yazınız olacaktır.*
   
-          > ### Renk
+  > ### Renk
 ```
 .setColor('#hexColor')
   ```
