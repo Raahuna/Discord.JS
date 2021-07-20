@@ -1,5 +1,69 @@
 # DISCORD JS ANLATIM ŞEYSİ 🤓
 
+## Gömülü Mesaj
+
+> ### Yazar
+```
+.setAuthor('Name','AvatarURL')
+  ```
+  
+  *Bu şekilde kullanılır, **Name** yerine bir isim ve **AvatarURL** yerinede profil fotoğrafının linkini yazınız.*
+  
+  > ### Başlık
+```
+.setTitle('TitleMessage')
+  ```
+  
+  *Bu şekilde kullanılır, **TitleMessage** yerine ne yazarsanız mesaj başlığı o olur.*
+  
+    > ### Açıklama
+```
+.setDescription(`DescriptionMessage`)
+  ```
+  
+  *Bu şekilde kullanılır, **DescriptionMessage** yerine ne yazarsanız mesaj açıklaması o olur.*
+  
+      > ### Afiş
+```
+.setImage('ImageURL')
+  ```
+  
+  *Bu şekilde kullanılır, **ImageURL** yerine istediğiniz bir görselin linkini yazınız, en alta o resim eklenir.*
+  
+        > ### Görsel
+```
+.setThumbnail('ImageURL')
+  ```
+  
+  *Bu şekilde kullanılır, **ImageURL** yerine istediğiniz bir görselin linkini yazınız sağ üste o resimin küçük hali eklenir.*
+  
+        > ### Alt yazı
+```
+.setFooter('FooterMessage','FooterIconURL')
+  ```
+  
+  *Bu şekilde kullanılır, **FooterMessage** yerine istediğiniz bir mesajı, FooterIconURL yazan yere istediğiniz bir fotoğrafın linkini yazınız bu sizin alt yazınızdaki görseliniz ve yazınız olacaktır.*
+  
+          > ### Renk
+```
+.setColor('#hexColor')
+  ```
+  
+  *Bu şekilde kullanılır, **hexColor** yerine bir rengin hex rengi kodunu yazınız.*
+
+        > ### Hex Renkleri
+🔴Kırmızı => #f80e12
+🟠Turuncu => #e96c1c
+🟡Sarı => #fffd00
+🟢Yeşil => #83df13
+🔵Mavi => #1d78e9
+🟣Mor => #db00fb
+🟤Kahverengi => #b44a0b
+⚫Siyah => #020202
+⚪Beyaz => #feffff
+
+Daha fazla renk için [HTML Color Codes](https://htmlcolorcodes.com/) sitesini inceleyebilirsin!
+
 ## Emojiler & Tepkiler
 
 > ### Emoji eklemek
@@ -8,7 +72,7 @@ message.guild.emojis
   .create('emoji_link', 'emoji_name')
   ```
   
-  *Bu şekilde kullanılır **emoji_link** yerine bir emoji linki ve **emoji_name** yerinede eklenecek emojinin isimini yazınız.*
+  *Bu şekilde kullanılır, **emoji_link** yerine bir emoji linki ve **emoji_name** yerinede eklenecek emojinin isimini yazınız.*
   
 📌  *NOT: Emoji linkleri şu şekildedir => **https://cdn.discordapp.com/emojis/751979651340959774.png?v=1***
 
