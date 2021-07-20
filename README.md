@@ -51,15 +51,24 @@
   
   *Bu şekilde kullanılır, **hexColor** yerine bir rengin hex rengi kodunu yazınız.*
 
-        > ### Hex Renkleri
+> ### Hex Renkleri
+  
 🔴Kırmızı => #f80e12
+
 🟠Turuncu => #e96c1c
+
 🟡Sarı => #fffd00
+
 🟢Yeşil => #83df13
+
 🔵Mavi => #1d78e9
+
 🟣Mor => #db00fb
+
 🟤Kahverengi => #b44a0b
+
 ⚫Siyah => #020202
+
 ⚪Beyaz => #feffff
 
 Daha fazla renk için [HTML Color Codes](https://htmlcolorcodes.com/) sitesini inceleyebilirsin!
