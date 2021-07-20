@@ -76,17 +76,15 @@ Daha fazla renk için [HTML Color Codes](https://htmlcolorcodes.com/) sitesini i
 > ### Örnek Embed
 
 ```
-const Discord = require('discord.js');
-
- const embed = new Discord.MessageEmbed()
-	.setColor('83df13')
-	.setTitle('Mükemmel bir başlık')
-	.setAuthor('Rahuna', 'https://avatars.githubusercontent.com/u/80279532?v=4')
-	.setDescription('Alttaki fotoğrafa bakınca yakışıklı birini görüyorum.')
-	.setImage(`${message.member.user.displayAvatarURL()}`)
+        const embed = new Discord.MessageEmbed()
+        .setColor('83df13')
+        .setTitle('Mükemmel bir başlık')
+        .setAuthor('Rahuna', 'https://avatars.githubusercontent.com/u/80279532?v=4')
+        .setDescription('Alttaki fotoğrafa bakınca yakışıklı birini görüyorum.')
+        .setImage(`${message.member.user.displayAvatarURL()}`)
         .setThumbnail('https://i.imgur.com/wSTFkRM.png')
-	.setFooter('<= Burdaki yakışıklıyı kastetmiştim üstüne alınmadın umarım.', `${client.bot.avatarURL()}`)
-     message.channel.send(embed);
+        .setFooter('<= Burdaki yakışıklıyı kastetmiştim üstüne alınmadın umarım.', `${client.bot.avatarURL()}`)
+    message.channel.send(embed);
 ```
 
 ## Emojiler & Tepkiler
