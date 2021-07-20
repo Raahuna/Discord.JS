@@ -86,7 +86,7 @@ const Discord = require('discord.js');
 	.setImage(`${message.member.user.displayAvatarURL()}`)
         .setThumbnail('https://i.imgur.com/wSTFkRM.png')
 	.setFooter('<= Burdaki yakışıklıyı kastetmiştim üstüne alınmadın umarım.', `${client.bot.avatarURL()}`)
-         message.channel.send(embed);
+     message.channel.send(embed);
 ```
 
 ## Emojiler & Tepkiler
