@@ -106,7 +106,7 @@ message.guild.emojis
   
 📌  *NOT: Emoji linkleri şu şekildedir => **https://cdn.discordapp.com/emojis/751979651340959774.png?v=1***
 
-![get_emoji_link](https://cdn.discordapp.com/attachments/833692291230072872/855119180868747324/Ekran_goruntusu_2021-06-17_191752.png)
+![get_emoji_link](https://user-images.githubusercontent.com/80279532/134048745-9777b4fe-bdbb-437a-b588-db7a7692c11d.png)
 
 - **Bunu kopyalamak için bir emojiye **sağ** tıklayıp "Bağlantıyı Kopyala" seçeneğine tıklayınız.**
 
