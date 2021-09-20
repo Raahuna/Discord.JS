@@ -92,7 +92,7 @@ client.on("message", message => {
 });
 ```
 
-![ExampleEmbed](https://user-images.githubusercontent.com/80279532/126309423-ecc883ab-b1e1-4a5e-b0ce-76693bac4f3f.png)
+![ExampleEmbed](https://user-images.githubusercontent.com/80279532/134047640-069f77cb-fbb2-4c83-8239-7fcf537eb934.png)
 
 ## Emojiler & Tepkiler
 
@@ -110,7 +110,7 @@ message.guild.emojis
 
 - **Bunu kopyalamak için bir emojiye **sağ** tıklayıp "Bağlantıyı Kopyala" seçeneğine tıklayınız.**
 
-![AddEmoji](https://user-images.githubusercontent.com/80279532/122451759-2e6d2d00-cfb1-11eb-865b-814b907ada07.png)
+![AddEmoji](https://user-images.githubusercontent.com/80279532/134047771-9baa432d-ca1e-4a5d-80d5-9e53ff2b8bc4.png)
 
 ```
 client.on('message', message => {
@@ -137,7 +137,7 @@ client.on('message', message => {
   
   *Botun mesajına tepki ekler.*
   
-![Reactions](https://cdn.discordapp.com/attachments/833692291230072872/855144897002602566/Ekran_goruntusu_2021-06-17_210020.png)
+![Reactions](https://user-images.githubusercontent.com/80279532/134047886-6d48b259-bfc9-4764-80a8-b4fb11ad5d71.png)
 
 ```
 client.on('message', message => {
@@ -166,7 +166,7 @@ client.on('message', message => {
   ```
   *Yukarıda yazılan **"cat"** isimli kategori oluşturduktan sonra içine **"Pofuduk Kedi"**, **"Şişman Kedi"** ve **"Vahşi Kedi"** elemanlarını ekledik.*
   
-![CatRandom](https://cdn.discordapp.com/attachments/833692291230072872/855399272214954054/Ekran_goruntusu_2021-06-18_134743.png)
+![CatRandom](https://user-images.githubusercontent.com/80279532/134048021-f7cc38bc-6d60-47c5-a1e5-b07437fcee9e.png)
 
 ```
 client.on('message', message => {
@@ -198,7 +198,7 @@ client.on('message', message => {
   ```
   **Daha önce **cat_name** olarak tanıttığımız kodun altına if() ler ile olacakları yazdık. If en önemli kodlardan biridir, şu anda kullandığımız kod kediyi seçmesini ardından hangi kedi çıkarsa **cat_info** olarak tanıttığımız yazıda değişiklik yapmasını sağladık.*
   
-  ![CatInfo](https://cdn.discordapp.com/attachments/833692291230072872/857141423770173460/unknown.png)
+  ![CatInfo](https://user-images.githubusercontent.com/80279532/134048098-d3d49dc1-5fe1-46e2-aee9-c271b92e1cc2.png)
   
   ```
   client.on('message', message => {
