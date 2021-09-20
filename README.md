@@ -230,9 +230,7 @@ client.on('message', message => {
   ```
   
   📌  *NOT: Az önceki kodda kullandığımız \n satır atlamaya yarar. **"ctrl + alt + \*"** ile ters slash (\) koyabilirsiniz. Diğer kesme işaretleri içinde (**"** veya **'**) içinde satır atlayamazsınız. İtediğiniz gibi yazabilmeniz için **"ctrl + alt + , + space"** içine yazarakta bunu yapabilirsiniz. Ayrıca tanıttıktan sonra onu kullanmak için yazdığımız **${}** sadece **\`** içerisinde iken çalışır.*
-  
-    ### Seçime göre değişiklik yapmak (Daha Basit)
-
+      ### Seçime göre değişiklik yapmak (Daha Basit)
 ```
   client.on('message', message => {
 var Cats = [
