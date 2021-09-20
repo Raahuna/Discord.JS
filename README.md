@@ -221,10 +221,10 @@ client.on('message', message => {
        if(RandomCatName === 'Vahşi Kedi') { var CatInfo = 'Yetişkin bir aslanın ısırığı, herhangi bir ev kedisinin ısırığından 30 kat daha güçlüdür. Aslanlar hayatı boyunca ortalama 3.000 kez çiftleşir. Bir aslan 3 metre boya kadar ulaşabilir. Aslanlar, her gün en az 10 saat uyumaktadır' }
 
        if(message.content === 'Hey Mob! Bir kedi hakkında bilgi verir misin?'){
-       message.channel.send(`**${cat_name}**\n${cat_info}`)
+       message.channel.send(`**${RandomCatName}**\n${CatInfo}`)
        }
        if(message.content === 'Teşekkürler, bir tane daha kedi hakkında bilgi verir misin?'){
-        message.channel.send(`**${cat_name}**\n${cat_info}`)
+        message.channel.send(`**${RandomCatName}**\n${CatInfo}`)
         }
     })
   ```
