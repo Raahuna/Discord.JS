@@ -186,7 +186,7 @@ client.on('message', message => {
        }
 })
 ```
-  ### Seçime göre değişiklik yapmak
+ > ### Seçime göre değişiklik yapmak
   
   ``` 
     var CatNames = [
@@ -202,7 +202,7 @@ client.on('message', message => {
        if(RandomCatName === 'Vahşi Kedi') { var CatInfo = 'Yetişkin bir aslanın ısırığı, herhangi bir ev kedisinin ısırığından 30 kat daha güçlüdür. Aslanlar hayatı boyunca ortalama 3.000 kez çiftleşir. Bir aslan 3 metre boya kadar ulaşabilir. Aslanlar, her gün en az 10 saat uyumaktadır' }
 
   ```
-  **Daha önce **RandomCatName** olarak tanıttığımız kodun altına if() ler ile olacakları yazdık. If en önemli kodlardan biridir, şu anda kullandığımız kod kediyi seçmesini ardından hangi kedi çıkarsa **CatInfo** olarak tanıttığımız yazıda değişiklik yapmasını sağladık.*
+  **Daha önce **RandomCatName** olarak tanıttığımız kodun altına if() ler ile olacakları yazdık. If en önemli kodlardan biridir, şu anda kullandığımız kod kediyi seçmesini ardından hangi kedi çıkarsa **CatInfo** olarak tanıttığımız yazıda değişiklik yapmasını sağladık.**
   
   ![CatInfo](https://user-images.githubusercontent.com/80279532/134048098-d3d49dc1-5fe1-46e2-aee9-c271b92e1cc2.png)
   
@@ -230,7 +230,9 @@ client.on('message', message => {
   ```
   
   📌  *NOT: Az önceki kodda kullandığımız \n satır atlamaya yarar. **"ctrl + alt + \*"** ile ters slash (\) koyabilirsiniz. Diğer kesme işaretleri içinde (**"** veya **'**) içinde satır atlayamazsınız. İtediğiniz gibi yazabilmeniz için **"ctrl + alt + , + space"** içine yazarakta bunu yapabilirsiniz. Ayrıca tanıttıktan sonra onu kullanmak için yazdığımız **${}** sadece **\`** içerisinde iken çalışır.*
-      ### Seçime göre değişiklik yapmak (Daha Basit)
+  
+ > ### Seçime göre değişiklik yapmak (Daha Basit)
+  
 ```
   client.on('message', message => {
 var Cats = [
