@@ -260,3 +260,25 @@ var Cats = [
     })
 
 ```
+
+ > ### İki sayı arasından rastgele birini seçmek
+
+```
+var RandomNumber = Math.floor(Math.random() * 10) + 0;
+```
+
+*Burda 10-0 arasında bir sayı seçiyoruz. **En yüksek değer önce**, **En düşük değer sonra** yazılır.*
+
+![RandomNumber](https://user-images.githubusercontent.com/80279532/134231422-54f8c1e4-f16c-4089-b2bb-369a0b74d4c5.png)
+
+
+  ```
+client.on('message', message => {
+  
+  var RandomNumber = Math.floor(Math.random() * 10) + 0;
+       
+  if(message.content === 'Hey Mob! Beni 10 üzerinden puanlar mısın?'){
+       message.channel.send(`Sana verdiğim puan: ${RandomNumber}`)
+       }
+    })
+  ```
