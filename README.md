@@ -3,49 +3,49 @@
 ## Gömülü Mesaj
 
 > ### Yazar
-```
+```js
 .setAuthor('Name','AvatarURL')
   ```
   
   *Bu şekilde kullanılır, **Name** yerine bir isim ve **AvatarURL** yerinede profil fotoğrafının linkini yazınız.*
   
   > ### Başlık
-```
+```js
 .setTitle('TitleMessage')
   ```
   
   *Bu şekilde kullanılır, **TitleMessage** yerine ne yazarsanız mesaj başlığı o olur.*
   
    > ### Açıklama
-```
+```js
 .setDescription('DescriptionMessage')
   ```
   
   *Bu şekilde kullanılır, **DescriptionMessage** yerine ne yazarsanız mesaj açıklaması o olur.*
   
   > ### Afiş
-```
+```js
 .setImage('ImageURL')
   ```
   
   *Bu şekilde kullanılır, **ImageURL** yerine istediğiniz bir görselin linkini yazınız, en alta o resim eklenir.*
   
   > ### Görsel
-```
+```js
 .setThumbnail('ImageURL')
   ```
   
   *Bu şekilde kullanılır, **ImageURL** yerine istediğiniz bir görselin linkini yazınız sağ üste o resimin küçük hali eklenir.*
   
   > ### Alt yazı
-```
+```js
 .setFooter('FooterMessage','FooterIconURL')
   ```
   
   *Bu şekilde kullanılır, **FooterMessage** yerine istediğiniz bir mesajı, FooterIconURL yazan yere istediğiniz bir fotoğrafın linkini yazınız bu sizin alt yazınızdaki görseliniz ve yazınız olacaktır.*
   
   > ### Renk
-```
+```js
 .setColor('#hexColor')
   ```
   
@@ -75,7 +75,7 @@ Daha fazla renk için [HTML Color Codes](https://htmlcolorcodes.com/) sitesini i
 
 > ### Örnek Embed
 
-```
+```js
 client.on("message", message => {
 
     if(message.content === 'Hey Mob! Benim için bir gömülü mesaj oluşturur musun?') {
@@ -97,7 +97,7 @@ client.on("message", message => {
 ## Emojiler & Tepkiler
 
 > ### Emoji eklemek
-```
+```js
 message.guild.emojis
   .create('emojiLink', 'emojiName')
   ```
@@ -112,7 +112,7 @@ message.guild.emojis
 
 ![AddEmoji](https://user-images.githubusercontent.com/80279532/134047771-9baa432d-ca1e-4a5d-80d5-9e53ff2b8bc4.png)
 
-```
+```js
 client.on('message', message => {
     if (message.content === 'Hey Mob! Bu sunucuya güzel bir emoji ekler misin?') {
         message.channel.send('Tabiki')
@@ -123,13 +123,13 @@ client.on('message', message => {
 ```
 
 > ### Tepki Eklemek
-```
+```js
       message.react('🍪')
   ```
   
   *Mesajı gönderen kişinin mesajına tepki ekler.*
   
-  ```
+  ```js
       .then(function (message) {
             message.react('🍪')
           })
@@ -139,7 +139,7 @@ client.on('message', message => {
   
 ![Reactions](https://user-images.githubusercontent.com/80279532/134047886-6d48b259-bfc9-4764-80a8-b4fb11ad5d71.png)
 
-```
+```js
 client.on('message', message => {
     if (message.content === 'Hey Mob! Bu mesaja tepki ekler misin?') {
         message.channel.send('Böyle oldu mu?').then(function (message) {
@@ -155,7 +155,7 @@ client.on('message', message => {
 ## Rastgele Seçim Uygulamak 
 
 > ### Yazılanlardan rastgele birini seçmek
-  ```
+  ```js
   var CatNames = [
    "Pofuduk Kedi",
    "Şişman Kedi",
@@ -168,7 +168,7 @@ client.on('message', message => {
   
 ![CatRandom](https://user-images.githubusercontent.com/80279532/134048021-f7cc38bc-6d60-47c5-a1e5-b07437fcee9e.png)
 
-```
+```js
 client.on('message', message => {
     var CatNames = [
         "Pofuduk Kedi",
@@ -188,7 +188,7 @@ client.on('message', message => {
 ```
  > ### Seçime göre değişiklik yapmak
   
-  ``` 
+  ``` js
     var CatNames = [
         "Pofuduk Kedi",
         "Şişman Kedi",
@@ -206,7 +206,7 @@ client.on('message', message => {
   
   ![CatInfo](https://user-images.githubusercontent.com/80279532/134048098-d3d49dc1-5fe1-46e2-aee9-c271b92e1cc2.png)
   
-  ```
+  ```js
   client.on('message', message => {
     var CatNames = [
         "Pofuduk Kedi",
@@ -233,7 +233,7 @@ client.on('message', message => {
   
  > ### Seçime göre değişiklik yapmak (Daha Basit)
   
-```
+```js
   client.on('message', message => {
 var Cats = [
       {
@@ -263,7 +263,7 @@ var Cats = [
 
  > ### İki sayı arasından rastgele birini seçmek
 
-```
+```js
 var RandomNumber = Math.floor(Math.random() * 10) + 0;
 ```
 
@@ -272,7 +272,7 @@ var RandomNumber = Math.floor(Math.random() * 10) + 0;
 ![RandomNumber](https://user-images.githubusercontent.com/80279532/134231422-54f8c1e4-f16c-4089-b2bb-369a0b74d4c5.png)
 
 
-  ```
+  ```js
 client.on('message', message => {
   
   var RandomNumber = Math.floor(Math.random() * 10) + 0;
@@ -282,3 +282,15 @@ client.on('message', message => {
        }
     })
   ```
+  
+  ## Fonksyonlar
+
+> ### Kullanıcı
+message.author => Mesajı gönderen kişi.
+message.member => Mesajı gönderen ve sunucuda olan kişi.
+
+.username => Kullanıcı adı. (Rahuna)
+.displayName => Sunucu içinde kullanıcı adı. (Selam ben Kiraz🍒)
+.tag => Kullanıcı adı ve etiketi. (Rahuna#3434)
+.id => Kullanıcı ID'si. (528118080706969600)
+.displayAvatarURL() => Kullanıcının Profil fotoğrafı.
