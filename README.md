@@ -286,11 +286,23 @@ client.on('message', message => {
   ## Fonksyonlar
 
 > ### Kullanıcı
-message.author => Mesajı gönderen kişi.
-message.member => Mesajı gönderen ve sunucuda olan kişi.
 
-.username => Kullanıcı adı. (Rahuna)
-.displayName => Sunucu içinde kullanıcı adı. (Selam ben Kiraz🍒)
-.tag => Kullanıcı adı ve etiketi. (Rahuna#3434)
-.id => Kullanıcı ID'si. (528118080706969600)
-.displayAvatarURL() => Kullanıcının Profil fotoğrafı.
+🏷️*Kullanıcılar için olan fonksyonlar ikiye ayrılır.*
+
+> ### Mesajı gönderen kişi
+```js
+message.author
+  ```
+  
+> ### Mesajı gönderen ve sunucuda olan kişi.
+```js
+message.member
+  ```
+
+message.author | message.member | Sonuç
+------------ | ------------ | ------------
+message.author.username | message.member.user.username | Rahuna
+message.author.tag | message.member.user.tag | Rahuna#3434
+❌ | message.member.displayName | Selam ben Kiraz🍒
+message.author.id | message.member.id | 528118080706969600
+message.author.displayAvatarURL() | message.member.displayAvatarURL() | 
