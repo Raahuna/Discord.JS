@@ -1,8 +1,8 @@
-# DISCORD JS ANLATIM ŞEYSİ 🤓
+# <img src="https://koya.gg/assets/img/discordjs-logo.png" width="48"> DISCORD JS ANLATIM ŞEYSİ
 
 ## Gömülü Mesaj
 
-
+🏷️*Gömülü mesajlar botunuzun daha şık gözükmesini sağlar.*
 
 > ### Yazar
 ```js
@@ -45,6 +45,20 @@
   ```
   
   *Bu şekilde kullanılır, **FooterMessage** yerine istediğiniz bir mesajı, FooterIconURL yazan yere istediğiniz bir fotoğrafın linkini yazınız bu sizin alt yazınızdaki görseliniz ve yazınız olacaktır.*
+  
+    > ### Başlık Bağlantısı
+```js
+.setURL('Link')
+  ```
+  
+  *Bu şekilde kullanılır, **Link** yerine istediğiniz bir site bağlantısını yazınız, Başlık yazısı mavi olacaktır ve tıklandığında seçtiğiniz bağlantı açılacaktır.*
+  
+      > ### Tarih
+```js
+.setTimestamp()
+  ```
+  
+  *Sadece **.setTimestamp()** yazarsanız bu günün tarihini atacaktır*
   
   > ### Renk
 ```js
