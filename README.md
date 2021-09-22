@@ -305,4 +305,4 @@ message.author.username | message.member.user.username | Rahuna
 message.author.tag | message.member.user.tag | Rahuna#3434
 ❌ | message.member.displayName | Selam ben Kiraz🍒
 message.author.id | message.member.id | 528118080706969600
-message.author.displayAvatarURL() | message.member.displayAvatarURL() | 
+message.author.displayAvatarURL() | message.member.displayAvatarURL() | ![RahunaPFP](https://media.pocketgamer.biz/2021/5/110514/discord-new-logo-2021-r225x.jpg)
