@@ -2,6 +2,8 @@
 
 ## Gömülü Mesaj
 
+
+
 > ### Yazar
 ```js
 .setAuthor('Name','AvatarURL')
@@ -73,7 +75,7 @@
 
 Daha fazla renk için [HTML Color Codes](https://htmlcolorcodes.com/) sitesini inceleyebilirsin!
 
-> ### Örnek Embed
+![ExampleEmbed](https://user-images.githubusercontent.com/80279532/134047640-069f77cb-fbb2-4c83-8239-7fcf537eb934.png)
 
 ```js
 client.on("message", message => {
@@ -92,11 +94,9 @@ client.on("message", message => {
 });
 ```
 
-![ExampleEmbed](https://user-images.githubusercontent.com/80279532/134047640-069f77cb-fbb2-4c83-8239-7fcf537eb934.png)
-
 ## Emojiler & Tepkiler
 
-> ### Emoji eklemek
+> ## Emoji eklemek
 ```js
 message.guild.emojis
   .create('emojiLink', 'emojiName')
@@ -104,7 +104,7 @@ message.guild.emojis
   
   *Bu şekilde kullanılır, **emojiLink** yerine bir emoji linki ve **emojiName** yerinede eklenecek emojinin isimini yazınız.*
   
-📌  *NOT: Emoji linkleri şu şekildedir => **https://cdn.discordapp.com/emojis/751979651340959774.png?v=1***
+🏷️*Emoji linkleri şu şekildedir => **https://cdn.discordapp.com/emojis/751979651340959774.png?v=1***
 
 ![get_emoji_link](https://user-images.githubusercontent.com/80279532/134048745-9777b4fe-bdbb-437a-b588-db7a7692c11d.png)
 
@@ -122,20 +122,22 @@ client.on('message', message => {
 });
 ```
 
-> ### Tepki Eklemek
+> ## Tepki Eklemek
+
+🏷️*İstediğiniz mesaja tepki ekleyebilirsiniz. Bu bir kullanıcınında mesajı olabilir, botunuzun mesajıda.*
+
+> ### Mesajı gönderen kişinin mesajına tepki ekler.
 ```js
       message.react('🍪')
   ```
   
-  *Mesajı gönderen kişinin mesajına tepki ekler.*
-  
+> ### Botun mesajına tepki ekler.
   ```js
       .then(function (message) {
             message.react('🍪')
           })
   ```
   
-  *Botun mesajına tepki ekler.*
   
 ![Reactions](https://user-images.githubusercontent.com/80279532/134047886-6d48b259-bfc9-4764-80a8-b4fb11ad5d71.png)
 
@@ -154,7 +156,7 @@ client.on('message', message => {
 
 ## Rastgele Seçim Uygulamak 
 
-> ### Yazılanlardan rastgele birini seçmek
+> ## Yazılanlardan rastgele birini seçmek
   ```js
   var CatNames = [
    "Pofuduk Kedi",
@@ -186,7 +188,7 @@ client.on('message', message => {
        }
 })
 ```
- > ### Seçime göre değişiklik yapmak
+ > ## Seçime göre değişiklik yapmak
   
   ``` js
     var CatNames = [
@@ -229,9 +231,9 @@ client.on('message', message => {
     })
   ```
   
-  📌  *NOT: Az önceki kodda kullandığımız \n satır atlamaya yarar. **"ctrl + alt + \*"** ile ters slash (\) koyabilirsiniz. Diğer kesme işaretleri içinde (**"** veya **'**) içinde satır atlayamazsınız. İtediğiniz gibi yazabilmeniz için **"ctrl + alt + , + space"** içine yazarakta bunu yapabilirsiniz. Ayrıca tanıttıktan sonra onu kullanmak için yazdığımız **${}** sadece **\`** içerisinde iken çalışır.*
+ 🏷️*Az önceki kodda kullandığımız \n satır atlamaya yarar. **"ctrl + alt + \*"** ile ters slash (\) koyabilirsiniz. Diğer kesme işaretleri içinde (**"** veya **'**) içinde satır atlayamazsınız. İtediğiniz gibi yazabilmeniz için **"ctrl + alt + , + space"** içine yazarakta bunu yapabilirsiniz. Ayrıca tanıttıktan sonra onu kullanmak için yazdığımız **${}** sadece **\`** içerisinde iken çalışır.*
   
- > ### Seçime göre değişiklik yapmak (Daha Basit)
+ > ## Seçime göre değişiklik yapmak (Daha Basit)
   
 ```js
   client.on('message', message => {
@@ -261,13 +263,13 @@ var Cats = [
 
 ```
 
- > ### İki sayı arasından rastgele birini seçmek
+ > ## İki sayı arasından rastgele birini seçmek
 
 ```js
 var RandomNumber = Math.floor(Math.random() * 10) + 0;
 ```
 
-*Burda 10-0 arasında bir sayı seçiyoruz. **En yüksek değer önce**, **En düşük değer sonra** yazılır.*
+*Burda 10-0 arasında bir sayı seçiyoruz. **En yüksek değer önce**, **en düşük değer sonra** yazılır.*
 
 ![RandomNumber](https://user-images.githubusercontent.com/80279532/134231422-54f8c1e4-f16c-4089-b2bb-369a0b74d4c5.png)
 
@@ -285,9 +287,9 @@ client.on('message', message => {
   
   ## Fonksyonlar
 
-> ### Kullanıcı
+> ## Kullanıcı
 
-🏷️*Kullanıcılar için olan fonksyonlar ikiye ayrılır.*
+🏷️*Kullanıcılar için olan fonksyonlar ikiye ayrılır, bunlar **message.author** ve **message.member**'dır*
 
 > ### Mesajı gönderen kişi
 ```js
