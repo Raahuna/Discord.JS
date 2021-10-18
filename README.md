@@ -46,14 +46,14 @@
   
   *Bu şekilde kullanılır, **FooterMessage** yerine istediğiniz bir mesajı, FooterIconURL yazan yere istediğiniz bir fotoğrafın linkini yazınız bu sizin alt yazınızdaki görseliniz ve yazınız olacaktır.*
   
-    > ### Başlık Bağlantısı
+> ### Başlık Bağlantısı
 ```js
 .setURL('Link')
   ```
   
   *Bu şekilde kullanılır, **Link** yerine istediğiniz bir site bağlantısını yazınız, Başlık yazısı mavi olacaktır ve tıklandığında seçtiğiniz bağlantı açılacaktır.*
   
-      > ### Tarih
+> ### Tarih
 ```js
 .setTimestamp()
   ```
