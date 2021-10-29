@@ -4,63 +4,63 @@
 
 🏷️*Argümanlar bir yazının ikinci kelimesi veya dördüncü harften sonrası olabilir. Not: Argümanlar için sıfır, bir demektir bununla beraber girilen sayı onun bir fazlasına denk olur.*
 
-### Hızlı kahverengi tilki tembel köpeğin üzerinden atlar.
+### Pijamalı hasta, yağız şoföre çabucak güvendi..
 
 > ### toLocaleLowerCase()
 ```js
-var text = "HIZLI KAHVERENGI TILKI TEMBEL KÖPEĞIN ÜZERINDEN ATLAR.";
+var text = "PIJAMALI HASTA, YAĞIZ ŞOFÖRE ÇABUCAK GÜVENDI.";
 
-text.toLocaleLowerCase() = "hızlı kahverengi tilki tembel köpeğin üzerinden atlar." //Büyük harfleri küçük harfe çevirir.
+text.toLocaleLowerCase() = "pijamalı hasta, yağız şoföre çabucak güvendi." //Büyük harfleri küçük harfe çevirir.
 ```
 
 > ### toUpperCase()
 ```js
-var text = "hızlı kahverengi tilki tembel köpeğin üzerinden atlar.";
+var text = "pijamalı hasta, yağız şoföre çabucak güvendi.";
 
-text.toUpperCase() = "HIZLI KAHVERENGI TILKI TEMBEL KÖPEĞIN ÜZERINDEN ATLAR." //Küçük harfleri büyük harfe çevirir.
+text.toUpperCase() = "PIJAMALI HASTA, YAĞIZ ŞOFÖRE ÇABUCAK GÜVENDI." //Küçük harfleri büyük harfe çevirir.
 ```
 
 > ### split()
 ```js
-var text = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar."
+var text = "Pijamalı hasta, yağız şoföre çabucak güvendi."
 
-text.split(" ") = 'Hızlı', 'kahverengi', 'tilki', 'tembel', 'köpeğin', 'üzerinden', 'atlar.' //Cümledeki boşlukları siler ve yeni cümleyi virgül ile ayırarak listeler
-text.split("a") = 'Hızlı k', 'hverengi tilki tembel köpeğin üzerinden ', 'tl', 'r.' //Cümledeki a harflerini siler ve yeni cümleyi virgül ile ayırarak listeler
+text.split(" ") = 'Pijamalı', 'hasta,', 'yağız', 'şoföre', 'çabucak', 'güvendi.' //Cümledeki boşlukları siler ve yeni cümleyi virgül ile ayırarak listeler
+text.split("e") = 'Pijamalı hasta, yağız şoför', ' çabucak güv', 'ndi.' //Cümledeki e harflerini siler ve yeni cümleyi virgül ile ayırarak listeler
 
-text.split(" ")[5] = "üzerinden" //Cümledeki boşlukları sildikten sonra ayrılan kelimelerden 6. değeri alır. (Cümledeki 6. Kelime)
+text.split(" ")[3] = "şoföre" //Cümledeki boşlukları sildikten sonra ayrılan kelimelerden 4. değeri alır. (Cümledeki 4. Kelime)
 ```
 
 > ### trim()
 ```js
-var text = "     Hızlı kahverengi tilki tembel köpeğin üzerinden atlar.     ";
+var text = "     Pijamalı hasta, yağız şoföre çabucak güvendi.     ";
 
-text.trim() = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar." //Cümlenin başındaki boşlukları siler.
+text.trim() = "Pijamalı hasta, yağız şoföre çabucak güvendi." //Cümlenin başındaki boşlukları siler.
 ```
 
 > ### lenght
 ```js
-var text = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar.";
+var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
-text.length = 54 //Cümlede kaç karakter olduğunu gösterir.
+text.length = 45 //Cümlede kaç karakter olduğunu gösterir.
 ```
 
 > ### match()
 ```js
-var text = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar.";
+var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
-text.match(/a/g).length = 3 //Girilen kelime ya da karakterin cümlede kaç kez geçtiğini gösterir.
-text.match(/a/gi) = 'a', 'a', 'a' //Girilen kelime ya da karakterin cümlede nerelerde olduğunu sıralar 
+text.match(/a/g).length = 7 //Girilen kelime ya da karakterin cümlede kaç kez geçtiğini gösterir.
+text.match(/a/gi) = 'a', 'a', 'a', 'a', 'a', 'a', 'a' //Girilen kelime ya da karakterin cümlede nerelerde olduğunu sıralar.
 ```
 
 > ### slice()
 
 ```js
-var text = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar.";
+var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
-text.slice(0) = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar." //Cümlenin kendisi
-text.slice(23) = "tembel köpeğin üzerinden atlar." //Cümlenin 23. karakteri
-text.slice(-16) = "üzerinden atlar." //Cümlenin sondan 16. karakteri
-text.slice(0, 5) = "Hızlı" //Cümleyi ilk karakterden başlatır ve beşinci karakterde bitir
+text.slice(0) = "Pijamalı hasta, yağız şoföre çabucak güvendi." //Cümlenin kendisi.
+text.slice(22) = "şoföre çabucak güvendi." //Cümlenin 22. karakterinden sonuna kadar.
+text.slice(-16) = "çabucak güvendi." //Cümlenin sondan 16. karakterinden sonuna kadar.
+text.slice(0, 6) = "Pijama" //Cümleyi ilk karakterden başlatır ve 6. karakterde bitirir.
 ```
 
 ## Gömülü Mesaj
