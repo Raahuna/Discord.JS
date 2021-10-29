@@ -1,21 +1,66 @@
 # <img src="https://koya.gg/assets/img/discordjs-logo.png" width="48"> DISCORD JS ANLATIM ŞEYSİ
 
-## Argümanlar
+## Yazılar ve Argümanlar
 
 🏷️*Argümanlar bir yazının ikinci kelimesi veya dördüncü harften sonrası olabilir. Not: Argümanlar için sıfır, bir demektir bununla beraber girilen sayı onun bir fazlasına denk olur.*
 
-### var text = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar."
+### Hızlı kahverengi tilki tembel köpeğin üzerinden atlar.
+
+> ### toLocaleLowerCase()
+```js
+var text = "HIZLI KAHVERENGI TILKI TEMBEL KÖPEĞIN ÜZERINDEN ATLAR.";
+
+text.toLocaleLowerCase() = "hızlı kahverengi tilki tembel köpeğin üzerinden atlar." //Büyük harfleri küçük harfe çevirir.
+```
+
+> ### toUpperCase()
+```js
+var text = "hızlı kahverengi tilki tembel köpeğin üzerinden atlar.";
+
+text.toUpperCase() = "HIZLI KAHVERENGI TILKI TEMBEL KÖPEĞIN ÜZERINDEN ATLAR." //Küçük harfleri büyük harfe çevirir.
+```
+
+> ### split()
+```js
+var text = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar."
+
+text.split(" ") = Hızlı, kahverengi, tilki, tembel, köpeğin, üzerinden, atlar. //Cümledeki boşlukları siler ve yeni cümleyi virgül ile ayırarak listeler
+text.split("a") = Hızlı k, hverengi tilki tembel köpeğin üzerinden , tl, r. //Cümledeki a harflerini siler ve yeni cümleyi virgül ile ayırarak listeler
+
+text.split(" ")[5] = "üzerinden" //Cümledeki boşlukları sildikten sonra ayrılan kelimelerden 6. değeri alır. (Cümledeki 6. Kelime)
+```
+
+> ### trim()
+```js
+var text = "     Hızlı kahverengi tilki tembel köpeğin üzerinden atlar.     ";
+
+text.trim() = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar." //Cümlenin başındaki boşlukları siler.
+```
+
+> ### lenght
+```js
+var text = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar.";
+
+text.length = 54 //Cümlede kaç karakter olduğunu gösterir.
+```
+
+> ### match()
+```js
+var text = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar.";
+
+text.match(/a/g).length = 3 //Girilen kelime ya da karakterin cümlede kaç kez geçtiğini gösterir.
+text.match(/a/gi) = a, a, a, //Girilen kelime ya da karakterin cümlede nerelerde olduğunu sıralar 
+```
 
 > ### slice()
 
 ```js
-args.slice(0) = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar." //Cümlenin kendisi
+var text = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar.";
 
-args.slice(23) = "tembel köpeğin üzerinden atlar." //Cümlenin 23. karakteri
-
-args.slice(-16) = "üzerinden atlar." //Cümlenin sondan 16. karakteri
-
-args.slice(0, 5) = "Hızlı" //Cümleyi beşinci karakterde bitir
+text.slice(0) = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar." //Cümlenin kendisi
+text.slice(23) = "tembel köpeğin üzerinden atlar." //Cümlenin 23. karakteri
+text.slice(-16) = "üzerinden atlar." //Cümlenin sondan 16. karakteri
+text.slice(0, 5) = "Hızlı" //Cümleyi ilk karakterden başlatır ve beşinci karakterde bitir
 ```
 
 ## Gömülü Mesaj
