@@ -24,8 +24,8 @@ text.toUpperCase() = "HIZLI KAHVERENGI TILKI TEMBEL KÖPEĞIN ÜZERINDEN ATLAR."
 ```js
 var text = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar."
 
-text.split(" ") = Hızlı, kahverengi, tilki, tembel, köpeğin, üzerinden, atlar. //Cümledeki boşlukları siler ve yeni cümleyi virgül ile ayırarak listeler
-text.split("a") = Hızlı k, hverengi tilki tembel köpeğin üzerinden , tl, r. //Cümledeki a harflerini siler ve yeni cümleyi virgül ile ayırarak listeler
+text.split(" ") = 'Hızlı', 'kahverengi', 'tilki', 'tembel', 'köpeğin', 'üzerinden', 'atlar.' //Cümledeki boşlukları siler ve yeni cümleyi virgül ile ayırarak listeler
+text.split("a") = 'Hızlı k', 'hverengi tilki tembel köpeğin üzerinden ', 'tl', 'r.' //Cümledeki a harflerini siler ve yeni cümleyi virgül ile ayırarak listeler
 
 text.split(" ")[5] = "üzerinden" //Cümledeki boşlukları sildikten sonra ayrılan kelimelerden 6. değeri alır. (Cümledeki 6. Kelime)
 ```
@@ -49,7 +49,7 @@ text.length = 54 //Cümlede kaç karakter olduğunu gösterir.
 var text = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar.";
 
 text.match(/a/g).length = 3 //Girilen kelime ya da karakterin cümlede kaç kez geçtiğini gösterir.
-text.match(/a/gi) = a, a, a, //Girilen kelime ya da karakterin cümlede nerelerde olduğunu sıralar 
+text.match(/a/gi) = 'a', 'a', 'a' //Girilen kelime ya da karakterin cümlede nerelerde olduğunu sıralar 
 ```
 
 > ### slice()
