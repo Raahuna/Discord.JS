@@ -1,5 +1,34 @@
 # <img src="https://koya.gg/assets/img/discordjs-logo.png" width="48"> DISCORD JS ANLATIM ŞEYSİ
 
+## Argümanlar
+
+🏷️*Argümanlar bir yazının ikinci kelimesi veya dördüncü harften sonrası olabilir. Not: Argümanlar için sıfır, bir demektir bununla beraber girilen sayı onun bir eksiğine denk olur.*
+
+### Cümle = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar."
+
+> ### args
+> 
+```js
+args[0] = "Hızlı"
+
+args[1] = "kahverengi"
+
+args[2] = "tilki"
+```
+
+> ### args.slice
+
+```js
+args.slice(0) = "Hızlı"
+
+args.slice(1) = "kahverengi"
+
+args.slice = "tilki"
+```
+
+Kötülük yaptı = args.slice(1)
+Fonanc Kötülük yaptı = args.slice(0)
+
 ## Gömülü Mesaj
 
 🏷️*Gömülü mesajlar botunuzun daha şık gözükmesini sağlar.*
