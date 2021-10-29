@@ -2,28 +2,28 @@
 
 ## Argümanlar
 
-🏷️*Argümanlar bir yazının ikinci kelimesi veya dördüncü harften sonrası olabilir. Not: Argümanlar için sıfır, bir demektir bununla beraber girilen sayı onun bir eksiğine denk olur.*
+🏷️*Argümanlar bir yazının ikinci kelimesi veya dördüncü harften sonrası olabilir. Not: Argümanlar için sıfır, bir demektir bununla beraber girilen sayı onun bir fazlasına denk olur.*
 
-### Cümle = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar."
+### var text = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar."
 
-> ### args
+> ### charAt()
 > 
 ```js
-args[0] = "Hızlı"
+text.charAt(0) = "H"
 
-args[1] = "kahverengi"
+text.charAt(1) = "ı"
 
-args[2] = "tilki"
+text.charAt(2) = "z"
 ```
 
 > ### args.slice
 
 ```js
-args.slice(0) = "Hızlı"
+args.slice(0) = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar."
 
-args.slice(1) = "kahverengi"
+args.slice(23) = "tembel köpeğin üzerinden atlar."
 
-args.slice = "tilki"
+args.slice(-16) = "üzerinden atlar."
 ```
 
 Kötülük yaptı = args.slice(1)
