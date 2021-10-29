@@ -6,28 +6,17 @@
 
 ### var text = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar."
 
-> ### charAt()
-> 
-```js
-text.charAt(0) = "H"
-
-text.charAt(1) = "ı"
-
-text.charAt(2) = "z"
-```
-
-> ### args.slice
+> ### slice()
 
 ```js
-args.slice(0) = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar."
+args.slice(0) = "Hızlı kahverengi tilki tembel köpeğin üzerinden atlar." //Cümlenin kendisi
 
-args.slice(23) = "tembel köpeğin üzerinden atlar."
+args.slice(23) = "tembel köpeğin üzerinden atlar." //Cümlenin 23. karakteri
 
-args.slice(-16) = "üzerinden atlar."
+args.slice(-16) = "üzerinden atlar." //Cümlenin sondan 16. karakteri
+
+args.slice(0, 5) = "Hızlı" //Cümleyi beşinci karakterde bitir
 ```
-
-Kötülük yaptı = args.slice(1)
-Fonanc Kötülük yaptı = args.slice(0)
 
 ## Gömülü Mesaj
 
