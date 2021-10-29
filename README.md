@@ -10,46 +10,45 @@
 ```js
 var text = "PIJAMALI HASTA, YAĞIZ ŞOFÖRE ÇABUCAK GÜVENDI.";
 
-text.toLocaleLowerCase() = "pijamalı hasta, yağız şoföre çabucak güvendi." //Büyük harfleri küçük harfe çevirir.
+console.log(text.toLocaleLowerCase()) //"pijamalı hasta, yağız şoföre çabucak güvendi." (Büyük harfleri küçük harfe çevirir.)
 ```
 
 > ### toUpperCase()
 ```js
 var text = "pijamalı hasta, yağız şoföre çabucak güvendi.";
 
-text.toUpperCase() = "PIJAMALI HASTA, YAĞIZ ŞOFÖRE ÇABUCAK GÜVENDI." //Küçük harfleri büyük harfe çevirir.
+console.log(text.toUpperCase()) //"PIJAMALI HASTA, YAĞIZ ŞOFÖRE ÇABUCAK GÜVENDI." (Küçük harfleri büyük harfe çevirir.)
 ```
 
 > ### split()
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi."
 
-text.split(" ") = 'Pijamalı', 'hasta,', 'yağız', 'şoföre', 'çabucak', 'güvendi.' //Cümledeki boşlukları siler ve yeni cümleyi virgül ile ayırarak listeler
-text.split("e") = 'Pijamalı hasta, yağız şoför', ' çabucak güv', 'ndi.' //Cümledeki e harflerini siler ve yeni cümleyi virgül ile ayırarak listeler
-
-text.split(" ")[3] = "şoföre" //Cümledeki boşlukları sildikten sonra ayrılan kelimelerden 4. değeri alır. (Cümledeki 4. Kelime)
+console.log(text.split(" ")) //'Pijamalı', 'hasta,', 'yağız', 'şoföre', 'çabucak', 'güvendi.' (Cümledeki boşlukları siler ve yeni cümleyi virgül ile ayırarak listeler.)
+console.log(text.split("e")) //'Pijamalı hasta, yağız şoför', ' çabucak güv', 'ndi.' (Cümledeki e harflerini siler ve yeni cümleyi virgül ile ayırarak listeler.)
+console.log(text.split(" ")[3]) //"şoföre" (Cümledeki boşlukları sildikten sonra ayrılan kelimelerden 4. değeri alır.)
 ```
 
 > ### trim()
 ```js
 var text = "     Pijamalı hasta, yağız şoföre çabucak güvendi.     ";
 
-text.trim() = "Pijamalı hasta, yağız şoföre çabucak güvendi." //Cümlenin başındaki boşlukları siler.
+console.log(text.trim()) //"Pijamalı hasta, yağız şoföre çabucak güvendi." (Cümlenin başındaki boşlukları siler.)
 ```
 
 > ### lenght
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
-text.length = 45 //Cümlede kaç karakter olduğunu gösterir.
+console.log(text.length) //45 (Cümlede kaç karakter olduğunu gösterir.)
 ```
 
 > ### match()
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
-text.match(/a/g).length = 7 //Girilen kelime ya da karakterin cümlede kaç kez geçtiğini gösterir.
-text.match(/a/gi) = 'a', 'a', 'a', 'a', 'a', 'a', 'a' //Girilen kelime ya da karakterin cümlede nerelerde olduğunu sıralar.
+console.log(text.match(/a/g).length) //7 (A harfinin cümlede kaç kez geçtiğini gösterir.)
+console.log(text.match(/a/gi)) //'a', 'a', 'a', 'a', 'a', 'a', 'a' (A harfinin cümlede nerelerde olduğunu sıralar.)
 ```
 
 > ### slice()
@@ -57,11 +56,25 @@ text.match(/a/gi) = 'a', 'a', 'a', 'a', 'a', 'a', 'a' //Girilen kelime ya da kar
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
-text.slice(0) = "Pijamalı hasta, yağız şoföre çabucak güvendi." //Cümlenin kendisi.
-text.slice(22) = "şoföre çabucak güvendi." //Cümlenin 22. karakterinden sonuna kadar.
-text.slice(-16) = "çabucak güvendi." //Cümlenin sondan 16. karakterinden sonuna kadar.
-text.slice(0, 6) = "Pijama" //Cümleyi ilk karakterden başlatır ve 6. karakterde bitirir.
+console.log(text.slice(0)) //"Pijamalı hasta, yağız şoföre çabucak güvendi." (Cümlenin kendisi.)
+console.log(text.slice(22)) //"şoföre çabucak güvendi." (Cümlenin 22. karakterinden sonuna kadar.)
+console.log(text.slice(-16)) //"çabucak güvendi." (Cümlenin sondan 16. karakterinden sonuna kadar.)
+console.log(text.slice(0, 6)) //"Pijama" (Cümleyi ilk karakterden başlatır ve 6. karakterde bitirir.)
 ```
+
+> ### text.split("").reverse().join("")
+```js
+var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
+
+console.log(text.split("").reverse().join("")) //".idnevüg kacubaç eröfoş zığay ,atsah ılamajiP" (Yazıyı ters çevirir.)
+```
+
+> ### replace()
+```js
+var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
+
+console.log(text.replace('çabucak güvendi', 'sarıldı')) //Pijamalı hasta, yağız şoföre sarıldı.
+``` 
 
 ## Gömülü Mesaj
 
