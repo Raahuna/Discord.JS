@@ -7,69 +7,77 @@
 ### Pijamalı hasta, yağız şoföre çabucak güvendi..
 
 > ### toLocaleLowerCase()
+##### Büyük harfleri küçük harfe çevirir.
 ```js
 var text = "PIJAMALI HASTA, YAĞIZ ŞOFÖRE ÇABUCAK GÜVENDI.";
 
-console.log(text.toLocaleLowerCase()) //"pijamalı hasta, yağız şoföre çabucak güvendi." (Büyük harfleri küçük harfe çevirir.)
+console.log(text.toLocaleLowerCase()) //"pijamalı hasta, yağız şoföre çabucak güvendi."
 ```
 
 > ### toUpperCase()
+##### Küçük harfleri büyük harfe çevirir.
 ```js
 var text = "pijamalı hasta, yağız şoföre çabucak güvendi.";
 
-console.log(text.toUpperCase()) //"PIJAMALI HASTA, YAĞIZ ŞOFÖRE ÇABUCAK GÜVENDI." (Küçük harfleri büyük harfe çevirir.)
+console.log(text.toUpperCase()) //"PIJAMALI HASTA, YAĞIZ ŞOFÖRE ÇABUCAK GÜVENDI."
 ```
 
 > ### split()
+##### Cümledeki seçilen karakteri siler ve yeni cümleyi listeler.
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi."
 
-console.log(text.split(" ")) //'Pijamalı', 'hasta,', 'yağız', 'şoföre', 'çabucak', 'güvendi.' (Cümledeki boşlukları siler ve yeni cümleyi virgül ile ayırarak listeler.)
-console.log(text.split("e")) //'Pijamalı hasta, yağız şoför', ' çabucak güv', 'ndi.' (Cümledeki e harflerini siler ve yeni cümleyi virgül ile ayırarak listeler.)
-console.log(text.split(" ")[3]) //"şoföre" (Cümledeki boşlukları sildikten sonra ayrılan kelimelerden 4. değeri alır.)
+console.log(text.split(" ")) //'Pijamalı', 'hasta,', 'yağız', 'şoföre', 'çabucak', 'güvendi.'
+console.log(text.split("e")) //'Pijamalı hasta, yağız şoför', ' çabucak güv', 'ndi.'
+console.log(text.split(" ")[3]) //"şoföre"
 ```
 
 > ### trim()
+##### Cümlenin başındaki boşlukları siler.
 ```js
 var text = "     Pijamalı hasta, yağız şoföre çabucak güvendi.     ";
 
-console.log(text.trim()) //"Pijamalı hasta, yağız şoföre çabucak güvendi." (Cümlenin başındaki boşlukları siler.)
+console.log(text.trim()) //"Pijamalı hasta, yağız şoföre çabucak güvendi."
 ```
 
 > ### lenght
+##### Cümlede kaç karakter olduğunu gösterir.
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
-console.log(text.length) //45 (Cümlede kaç karakter olduğunu gösterir.)
+console.log(text.length) //45
 ```
 
 > ### match()
+##### Karakterin cümlede kaç kez geçtiğini gösterir ve bunları sıralayabilir.
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
-console.log(text.match(/a/g).length) //7 (A harfinin cümlede kaç kez geçtiğini gösterir.)
-console.log(text.match(/a/gi)) //'a', 'a', 'a', 'a', 'a', 'a', 'a' (A harfinin cümlede nerelerde olduğunu sıralar.)
+console.log(text.match(/a/g).length) //7
+console.log(text.match(/a/gi)) //'a', 'a', 'a', 'a', 'a', 'a', 'a'
 ```
 
 > ### slice()
-
+##### Cümleye belli bir yerden başlatıp belli bir yerde bitirir.
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
-console.log(text.slice(0)) //"Pijamalı hasta, yağız şoföre çabucak güvendi." (Cümlenin kendisi.)
-console.log(text.slice(22)) //"şoföre çabucak güvendi." (Cümlenin 22. karakterinden sonuna kadar.)
-console.log(text.slice(-16)) //"çabucak güvendi." (Cümlenin sondan 16. karakterinden sonuna kadar.)
-console.log(text.slice(0, 6)) //"Pijama" (Cümleyi ilk karakterden başlatır ve 6. karakterde bitirir.)
+console.log(text.slice(0)) //"Pijamalı hasta, yağız şoföre çabucak güvendi."
+console.log(text.slice(22)) //"şoföre çabucak güvendi."
+console.log(text.slice(-16)) //"çabucak güvendi."
+console.log(text.slice(0, 6)) //"Pijama"
 ```
 
 > ### text.split("").reverse().join("")
+##### Yazıyı ters çevirir.
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
-console.log(text.split("").reverse().join("")) //".idnevüg kacubaç eröfoş zığay ,atsah ılamajiP" (Yazıyı ters çevirir.)
+console.log(text.split("").reverse().join("")) //".idnevüg kacubaç eröfoş zığay ,atsah ılamajiP"
 ```
 
 > ### replace()
+##### Girilen karakteri yeni değer ile değiştirir.
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
