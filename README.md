@@ -1,5 +1,62 @@
 # <img src="https://koya.gg/assets/img/discordjs-logo.png" width="48"> DISCORD JS ANLATIM ŞEYSİ
 
+# ⏩ Başlangıç
+
+## 🤖 Kendi botunu oluştur.
+
+🏷️ | *Botlar, sunucunuzda otomatik olarak birçok yararlı görevi gerçekleştirebilen yararlı yapay zekadır. Bu, yeni üyeleri karşılamayı, sorun çıkaranları yasaklamayı ve tartışmayı yönetmeyi içerir. Hatta bazı botlar sunucunuza müzik veya oyunlar ekler.*
+
+➕ | **Bot oluşturmak için [Discord Developer Portal](https://discord.com/developers/applications) sitesinde giriş yapmalısınız. Hesabınız ile oturum açtıktan sonra "New Application" butonuna tıklayınız.**
+
+<img src="https://user-images.githubusercontent.com/80279532/141969338-bcc1283c-c2ae-4897-a07b-f3e25e0e0c5a.png" width="700">
+
+🪧 | **Şimdi sırada bir isim seçmek kaldı, kısa ve kolay telaffuz edilen bir isim seçmenizi tavsiye ederim, tıpkı görseldeki gibi!**
+
+<img src="https://user-images.githubusercontent.com/80279532/141971052-6f46dd7d-4a3a-477d-a588-db1ab51d2d9f.png" width="350">
+
+📷 | **Kolay İsimimizide seçtiğimize göre, kolay anlaşılır ve anlamlı bir fotoğrafı kırmızı ile işareti bölgeye tıklayıp logonuzu yükleyerek ilk adımı tamamlamış olacaksınız.**
+
+<img src="https://user-images.githubusercontent.com/80279532/141973468-767d557d-0136-43af-a6fb-2cabed27a893.png" width="400">
+
+**❗ | Ardından değişiklikleri kaydetmeyi sakın unutma, yoksa o anlamlı avatarınız sonsuza dek... y-yok olacak! 0_0**
+
+<img src="https://user-images.githubusercontent.com/80279532/141974392-4a8b2419-6a65-4a93-bde0-11601ef33bef.png" width="500">
+
+**⏰ | Neredeyse bitmek üzere! Yandaki bardan "Bot" yazısına tıklayın
+
+<img src="https://user-images.githubusercontent.com/80279532/141975274-0d643ed0-835f-4636-97d7-f857da829ade.png" width="200">
+
+⚙️ | **Yeni sayfada sağ üstteki...**
+
+<img src="https://user-images.githubusercontent.com/80279532/141977023-93c5e2b8-2bb4-411f-9cf5-9ed012a98fcd.png" width="550">
+
+⚙️ | **Pardon birazcık aşağı iner misin?**
+
+<img src="https://user-images.githubusercontent.com/80279532/141976689-31cd403a-8e37-43fd-8ee6-549de6d055d0.png" width="550">
+
+⚙️ | **Heh şimdi oldu "Add Bot" seçeneğine tıklayıp "Yes, do it!"  dediğinizde her şey hazır olacak!**
+
+## 🤖 Botunu Sunucuna Eklke.
+
+🧠 | **Discord bot daveti bağlantıları karışık olabilir ama bir mantığı vardır.**
+Linkler "https://discord.com/oauth2/authorize?client_id=" diye başlar **client_id=** kısımından sonrasına botunuzun ID'sini yazacaksınız. ID almak için "General Information" sekmesinden "Application ID" altında yazan sayı botunuza özel ID numarasıdır.
+
+<img src="https://user-images.githubusercontent.com/80279532/141981326-fce5812c-de59-4b97-a1fc-033707d834e9.png" width="550">
+
+🔗 | **Linklere devam edecek olursak. "https://discord.com/oauth2/authorize?client_id=" sonrasına ID numaranızı yazdıktan sonra "https://discord.com/oauth2/authorize?client_id=910117190517264436" şeklini alacak ama bitmedi! sonrasında "&scope=bot&permissions=8" yazmanız gerekir sondaki 8 sayısı botun yetkisine denktir. Yinede sayılarla uğraşmak istemiyorsanız [Discord Permission Calculator](https://discordapi.com/permissions.html) sitesini kullanabilirsiniz. Kutucukları istediğiniz yetkilere göre işaretledikten sonra Client ID'nizi yazıp "Link:" yazan satırın yanında bağlantıya tıklayıp bir sunucu seçtikten sonra o sunucuya botunuzu ekleyebilirsiniz.**
+
+<img src="https://user-images.githubusercontent.com/80279532/141980487-dee46778-8245-4d19-9aab-8d1dcf485af3.png" width="350">
+
+## 🤖 Gerekli uygulamalar & Kurulum.
+
+🔹 [Visual Studio Code](https://code.visualstudio.com) (Kaynak kodu düzenleyicisi)
+
+🟢 [Node JS](https://nodejs.org/en/) (Javascript Runtime)
+
+📝 | **Not: Bot için [Glitch](https://glitch.com) kullanmanızı tavsiye etmeyiz.** 
+
+**Kurulumu daha sonra yazacağım yoruldum 🥱**
+
 ## Yazılar ve Argümanlar
 
 🏷️*Argümanlar bir yazının ikinci kelimesi veya dördüncü harften sonrası olabilir. Not: Argümanlar için sıfır, bir demektir bununla beraber girilen sayı onun bir fazlasına denk olur.*
