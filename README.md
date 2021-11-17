@@ -1,5 +1,7 @@
 # <img src="https://koya.gg/assets/img/discordjs-logo.png" width="48"> DISCORD JS ANLATIM ŞEYSİ
 
+# **👋 | Selam burada Discord JS ile alakalı bilgileri paylaşıyorum bir başlangıç yeri seç! [En baştan başlamak istiyorum!](https://github.com/Raahuna/Discord.JS#-kendi-botunu-oluştur), [Botumu oluşturdum devamı için bir şey yapmadım](https://github.com/Raahuna/Discord.JS#-botunu-sunucuna-ekle), [Discord JS hakkındaki bilgimi geliştirmek istiyorun](https://github.com/Raahuna/Discord.JS#yazılar-ve-argümanlar)**
+
 # ⏩ Başlangıç
 
 ## 🤖 Kendi botunu oluştur.
@@ -36,7 +38,7 @@
 
 ⚙️ | **Heh şimdi oldu "Add Bot" seçeneğine tıklayıp "Yes, do it!"  dediğinizde her şey hazır olacak!**
 
-## 🤖 Botunu Sunucuna Eklke.
+## 🤖 Botunu Sunucuna Ekle.
 
 🧠 | **Discord bot daveti bağlantıları karışık olabilir ama bir mantığı vardır. eğer mantık ile uğraşmak istemiyorsan kolay yolu seçebilirsin, ama ondan önce botunuzun ID'sini almalısınız. ID almak için "General Information" sekmesinden "Application ID" altında yazan sayı botunuza özel ID numarasıdır.**
 
