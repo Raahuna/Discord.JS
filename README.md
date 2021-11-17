@@ -1,6 +1,9 @@
 # <img src="https://koya.gg/assets/img/discordjs-logo.png" width="48"> DISCORD JS ANLATIM ŞEYSİ
 
-# **👋 | Selam burada Discord JS ile alakalı bilgileri paylaşıyorum bir başlangıç yeri seç! [En baştan başlamak istiyorum!](https://github.com/Raahuna/Discord.JS#-kendi-botunu-oluştur), [Botumu oluşturdum devamı için bir şey yapmadım](https://github.com/Raahuna/Discord.JS#-botunu-sunucuna-ekle), [Discord JS hakkındaki bilgimi geliştirmek istiyorun](https://github.com/Raahuna/Discord.JS#yazılar-ve-argümanlar)**
+# 👋 | Selam burada Discord JS ile alakalı bilgileri paylaşıyorum bir başlangıç yeri seç! 
+# [En baştan başlamak istiyorum!](https://github.com/Raahuna/Discord.JS#-kendi-botunu-oluştur)
+# [Botumu oluşturdum devamı için bir şey yapmadım](https://github.com/Raahuna/Discord.JS#-botunu-sunucuna-ekle)
+# [Discord JS hakkındaki bilgimi geliştirmek istiyorun](https://github.com/Raahuna/Discord.JS#yazılar-ve-argümanlar)**
 
 # ⏩ Başlangıç
 
