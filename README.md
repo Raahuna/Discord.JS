@@ -22,7 +22,7 @@
 
 <img src="https://user-images.githubusercontent.com/80279532/141974392-4a8b2419-6a65-4a93-bde0-11601ef33bef.png" width="500">
 
-**⏰ | Neredeyse bitmek üzere! Yandaki bardan "Bot" yazısına tıklayın
+**⏰ | Neredeyse bitmek üzere! Yandaki bardan "Bot" yazısına tıklayın**
 
 <img src="https://user-images.githubusercontent.com/80279532/141975274-0d643ed0-835f-4636-97d7-f857da829ade.png" width="200">
 
@@ -38,14 +38,19 @@
 
 ## 🤖 Botunu Sunucuna Eklke.
 
-🧠 | **Discord bot daveti bağlantıları karışık olabilir ama bir mantığı vardır.**
-Linkler "https://discord.com/oauth2/authorize?client_id=" diye başlar **client_id=** kısımından sonrasına botunuzun ID'sini yazacaksınız. ID almak için "General Information" sekmesinden "Application ID" altında yazan sayı botunuza özel ID numarasıdır.
+🧠 | **Discord bot daveti bağlantıları karışık olabilir ama bir mantığı vardır. eğer mantık ile uğraşmak istemiyorsan kolay yolu seçebilirsin, ama ondan önce botunuzun ID'sini almalısınız. ID almak için "General Information" sekmesinden "Application ID" altında yazan sayı botunuza özel ID numarasıdır.**
 
-<img src="https://user-images.githubusercontent.com/80279532/141981326-fce5812c-de59-4b97-a1fc-033707d834e9.png" width="550">
+<img src="https://user-images.githubusercontent.com/80279532/142192158-d30411ee-885b-43bc-ba62-dcd28dc63439.png" width="350">
 
-🔗 | **Linklere devam edecek olursak. "https://discord.com/oauth2/authorize?client_id=" sonrasına ID numaranızı yazdıktan sonra "https://discord.com/oauth2/authorize?client_id=910117190517264436" şeklini alacak ama bitmedi! sonrasında "&scope=bot&permissions=8" yazmanız gerekir sondaki 8 sayısı botun yetkisine denktir. Yinede sayılarla uğraşmak istemiyorsanız [Discord Permission Calculator](https://discordapi.com/permissions.html) sitesini kullanabilirsiniz. Kutucukları istediğiniz yetkilere göre işaretledikten sonra Client ID'nizi yazıp "Link:" yazan satırın yanında bağlantıya tıklayıp bir sunucu seçtikten sonra o sunucuya botunuzu ekleyebilirsiniz.**
+🤓 | **Kolay Yol**
 
-<img src="https://user-images.githubusercontent.com/80279532/141980487-dee46778-8245-4d19-9aab-8d1dcf485af3.png" width="350">
+**Sayılarla uğraşmak istemiyorsanız [Discord Permission Calculator](https://discordapi.com/permissions.html) sitesini kullanabilirsiniz. Kutucukları istediğiniz yetkilere göre işaretledikten sonra Client ID'nizi yazıp "Link:" yazan satırın yanında bağlantıya tıklayıp bir sunucu seçtikten sonra o sunucuya botunuzu ekleyebilirsiniz.**
+
+<img src="https://user-images.githubusercontent.com/80279532/141980487-dee46778-8245-4d19-9aab-8d1dcf485af3.png" width="450">
+
+😎 | **Zor Yol**
+
+**Linkler "discord.com/oauth2/authorize?client_id=" olarak başlar "client_id=" kısımından sonrasına botunuzun ID'sini yazacaksınız, sonrasına ID numaranızı yazdıktan sonra "discord.com/oauth2/authorize?client_id=910117190517264436" şeklini alacak ama bitmedi! sonrasında "&scope=bot&permissions=8" yazmanız gerekir sondaki 8 sayısı botun "Yönetici" yetkisi alacağını belirtir, eğer yetkileri seçmek istiyorsanız 8 yerine 1099511627775 yazınız.**
 
 ## 🤖 Gerekli uygulamalar & Kurulum.
 
@@ -53,9 +58,37 @@ Linkler "https://discord.com/oauth2/authorize?client_id=" diye başlar **client_
 
 🟢 [Node JS](https://nodejs.org/en/) (Javascript Runtime)
 
-📝 | **Not: Bot için [Glitch](https://glitch.com) kullanmanızı tavsiye etmeyiz.** 
+### ⚙️ | Node JS (Kurulum)
 
-**Kurulumu daha sonra yazacağım yoruldum 🥱**
+**Adım 1) Sürüm Seç**
+
+<img src="https://wsvincent.com/assets/images/install-node-npm-windows/img1.png" width="350">
+
+**Adım 2) İnen uygulamayı aç**
+
+<img src="https://wsvincent.com/assets/images/install-node-npm-windows/img2.png" width="350">
+
+**Adım 3) Gördüğün her şeyde sadece "Next" tuşuna tıkla**
+
+<img src="https://wsvincent.com/assets/images/install-node-npm-windows/img3.png" width="250"> <img src="https://wsvincent.com/assets/images/install-node-npm-windows/img4.png" width="250"> <img src="https://wsvincent.com/assets/images/install-node-npm-windows/img5.png" width="250">
+
+### ⚙️ | Visual Studio Code (Kurulum)
+
+**Adım 1) "[Anlaşmayı Kabul Ediyorum](https://youtu.be/I0ld-0OKBLM)" seçeneği işaretleyip "İleri" tuşuna basın**
+
+<img src="https://user-images.githubusercontent.com/80279532/142194622-15570c3c-d8f2-418d-9626-bb9f31186750.png" width="250">
+
+**Adım 2) Bütün kutucukları işaretlemeniz işinizi kolaylaştıracaktır**
+
+<img src="https://user-images.githubusercontent.com/80279532/142194626-fef2566a-7995-4e0e-b71b-8522420d36e8.png" width="250">
+
+**Adım 3) "Kur" seçeneğine tıklayın**
+
+<img src="https://user-images.githubusercontent.com/80279532/142194634-aeef3028-2249-475f-9adf-efed97e87da5.png" width="250">
+
+## ❣️ | Botunu Aktifleştir.
+
+Az önce burdan ilerisini yazmıştım ama mükemmel bilgisayarım sağ olsun kapandı ve sıfırlandı yine ertelemek zorunda kaldım :c
 
 ## Yazılar ve Argümanlar
 
