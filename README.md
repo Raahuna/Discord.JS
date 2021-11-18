@@ -95,30 +95,30 @@
 
 Az önce burdan ilerisini yazmıştım ama mükemmel bilgisayarım sağ olsun kapandı ve sıfırlandı yine ertelemek zorunda kaldım :c
 
-## Yazılar ve Argümanlar
+## 📝 | Yazılar ve Argümanlar
 
-🏷️*Argümanlar bir yazının ikinci kelimesi veya dördüncü harften sonrası olabilir. Not: Argümanlar için sıfır, bir demektir bununla beraber girilen sayı onun bir fazlasına denk olur.*
+🏷️ | **Argümanlar bir yazının ikinci kelimesi veya dördüncü harften sonrası olabilir. Not: Argümanlar için sıfır, bir demektir bununla beraber girilen sayı onun bir fazlasına denk olur.**
 
-### Pijamalı hasta, yağız şoföre çabucak güvendi..
+### Pijamalı hasta, yağız şoföre çabucak güvendi.
 
-> ### toLocaleLowerCase()
-##### Büyük harfleri küçük harfe çevirir.
+> ### ⤵️ | toLocaleLowerCase()
+**Büyük harfleri küçük harfe çevirir.**
 ```js
 var text = "PIJAMALI HASTA, YAĞIZ ŞOFÖRE ÇABUCAK GÜVENDI.";
 
 console.log(text.toLocaleLowerCase()) //"pijamalı hasta, yağız şoföre çabucak güvendi."
 ```
 
-> ### toUpperCase()
-##### Küçük harfleri büyük harfe çevirir.
+> ### ⤴️ | toUpperCase()
+**Küçük harfleri büyük harfe çevirir.**
 ```js
 var text = "pijamalı hasta, yağız şoföre çabucak güvendi.";
 
 console.log(text.toUpperCase()) //"PIJAMALI HASTA, YAĞIZ ŞOFÖRE ÇABUCAK GÜVENDI."
 ```
 
-> ### split()
-##### Cümledeki seçilen karakteri siler ve yeni cümleyi listeler.
+> ### 🔀 | split()
+**Cümledeki seçilen karakteri siler ve yeni cümleyi listeler.**
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi."
 
@@ -127,24 +127,24 @@ console.log(text.split("e")) //'Pijamalı hasta, yağız şoför', ' çabucak g�
 console.log(text.split(" ")[3]) //"şoföre"
 ```
 
-> ### trim()
-##### Cümlenin başındaki boşlukları siler.
+> ### 🔃 | trim()
+**Cümlenin başındaki boşlukları siler.**
 ```js
 var text = "     Pijamalı hasta, yağız şoföre çabucak güvendi.     ";
 
 console.log(text.trim()) //"Pijamalı hasta, yağız şoföre çabucak güvendi."
 ```
 
-> ### lenght
-##### Cümlede kaç karakter olduğunu gösterir.
+> ### ↔️ | lenght
+**Cümlede kaç karakter olduğunu gösterir.**
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
 console.log(text.length) //45
 ```
 
-> ### match()
-##### Karakterin cümlede kaç kez geçtiğini gösterir ve bunları sıralayabilir.
+> ### 🔁 | match()
+**Karakterin cümlede kaç kez geçtiğini gösterir ve bunları sıralayabilir.**
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
@@ -152,8 +152,8 @@ console.log(text.match(/a/g).length) //7
 console.log(text.match(/a/gi)) //'a', 'a', 'a', 'a', 'a', 'a', 'a'
 ```
 
-> ### slice()
-##### Cümleye belli bir yerden başlatıp belli bir yerde bitirir.
+> ### ⏮️ | slice()
+**Cümleye belli bir yerden başlatıp belli bir yerde bitirir.**
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
@@ -163,39 +163,39 @@ console.log(text.slice(-16)) //"çabucak güvendi."
 console.log(text.slice(0, 6)) //"Pijama"
 ```
 
-> ### text.split("").reverse().join("")
-##### Yazıyı ters çevirir.
+> ### 🔙 | text.split("").reverse().join("")
+**Yazıyı ters çevirir.**
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
 console.log(text.split("").reverse().join("")) //".idnevüg kacubaç eröfoş zığay ,atsah ılamajiP"
 ```
 
-> ### replace()
-##### Girilen karakteri yeni değer ile değiştirir.
+> ### ↩️ | replace()
+**Girilen karakteri yeni değer ile değiştirir.**
 ```js
 var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 
 console.log(text.replace('çabucak güvendi', 'sarıldı')) //Pijamalı hasta, yağız şoföre sarıldı.
 ``` 
 
-## Gömülü Mesaj
+## *️⃣ | Gömülü Mesaj
 
-🏷️*Gömülü mesajlar botunuzun daha şık gözükmesini sağlar.*
+🏷️ | **Gömülü mesajlar botunuzun daha şık gözükmesini sağlar.**
 
-> ### Yazar
+> ### 🖋️ | Yazar
 ```js
 .setAuthor('Name','AvatarURL')
   ```
   
-  *Bu şekilde kullanılır, **Name** yerine bir isim ve **AvatarURL** yerinede profil fotoğrafının linkini yazınız.*
+  **Bu şekilde kullanılır, **Name** yerine bir isim ve **AvatarURL** yerinede profil fotoğrafının linkini yazınız.**
   
   > ### Başlık
 ```js
 .setTitle('TitleMessage')
   ```
   
-  *Bu şekilde kullanılır, **TitleMessage** yerine ne yazarsanız mesaj başlığı o olur.*
+  *Bu şekilde kullanılır, **TitleMessage** yerine ne yazarsanız mesaj başlığı o olur.**
   
    > ### Açıklama
 ```js
