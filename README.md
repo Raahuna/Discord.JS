@@ -93,7 +93,34 @@
 
 ## ❣️ | Botunu Aktifleştir.
 
-Az önce burdan ilerisini yazmıştım ama mükemmel bilgisayarım sağ olsun kapandı ve sıfırlandı yine ertelemek zorunda kaldım :c
+📁 | **Bir Klasör Oluştur**
+
+**Oluşturmayı bilmiyor musun? Sorun değil! Masa Üstünde boş bir yere sağ tıkla "Yeni" seçeneğine tıkla ve "Yeni Klasör" seçeneğini seç ardından bir isim girebilirsin bu isim botunun adı ile alakalı olursa daha iyi olur.**
+
+📟 | **NPM ile kurulum**
+
+**Klasörü açıp boş bir yerine "shift + sağ tık" yaparak seçenekleri açın ardından "PowerShell penceresini burda açın seçeneğine tıklayın."**
+
+<img src="https://user-images.githubusercontent.com/80279532/142381506-09b3832d-6b07-4a83-b4e7-75881d3ace44.png" width="400">
+
+**Açılan pencereye "npm init" yazın, kısa bir süre bekledikten sonra size bir kaç şey soracak**
+
+**package name: (Türkçe karakterler ve boşluk kullanmadan bir ad girin.)**
+**version: (Uhm... ne işe yaradığını bilmiyorum "0.0.1" yazıyorum hep.)**
+**description: (Bu paketinizin açıklamasıdır boş bırakılabilir.)**
+**entry point: (Sizin ana dosyanızın adıdır. Genellikle buraya bot.js, server.js, index.js vb. yazarlar. Sonda ".js" olmalı)**
+**test command: (Terminalinizden çalıştırırken nasıl çalıştıracağınızı ayarlayın. node "main dosyanızın adı" şeklinde ayarlayabilirsiniz.)**
+**git repostory: (Bunu şu anlık boş bırakabilirsiniz.)**
+**keywords: (Bunuda boş bırakabilirsiniz.)**
+**author: (Kendi adınızı yazın.)**
+**license: ("ISC" yazın.)**
+**Is this OK? (Her şey hazır onaylamanız için "yes" yazın.)**
+
+<img src="https://user-images.githubusercontent.com/80279532/142384435-8bd0eb08-11a8-413f-b920-52043bb0aadb.png" width="500">
+
+**Klasörünüzü tekrar açtığında bir adet "package" adlı bir dosya görüyorsanız başardınız demektir! Ama dur, daha bitmedi şimdi ise PowerShell penceresine bu sefer "npm install discord.js" yazıyoruz bu discord.js kütüphanesini indirmemizi sağlayacak, biraz beklediğinizde bitecek. Bittiği zaman klasörünüzde üç dosya olmuş olacak "node_modules", "package", "package-lock" dosyalarını görüyorsanız artık PowerShell pencresini kapatabilirsiniz. Hiç dosya görmüyor musun? Ümidini kesme Discord'dan (Rahuna#3434) bana DM atabilir yada GitHub'dan soru açabilirsin.**
+
+## **🟢 | Botu Aktifleştirme**
 
 ## 📝 | Yazılar ve Argümanlar
 
