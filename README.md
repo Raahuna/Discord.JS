@@ -1,9 +1,9 @@
 # <img src="https://koya.gg/assets/img/discordjs-logo.png" width="48"> DISCORD JS ANLATIM ŞEYSİ
 
 # 👋 | Selam burada Discord JS ile alakalı bilgileri paylaşıyorum. Bir başlangıç yeri seç! 
-- **[En baştan başlamak istiyorum!](https://github.com/Raahuna/Discord.JS/blob/main/baslangic.md)**
+- **[En baştan başlamak istiyorum](https://github.com/Raahuna/Discord.JS/blob/main/baslangic.md)**
 - **[Botumu oluşturdum devamı için bir şey yapmadım](https://github.com/Raahuna/Discord.JS/blob/main/baslangic.md/#-botunu-sunucuna-ekle)**
-- **[Discord JS hakkındaki bilgimi geliştirmek istiyorun](https://github.com/Raahuna/Discord.JS#--yazılar-ve-argümanlar)**
+- **[Discord JS hakkındaki bilgimi geliştirmek istiyorum](https://github.com/Raahuna/Discord.JS#--yazılar-ve-argümanlar)**
 
 ## 📝 | Yazılar ve Argümanlar
 
@@ -194,7 +194,7 @@ client.on("message", message => {
         .setImage(`${message.member.user.displayAvatarURL()}`)
         .setThumbnail('https://i.imgur.com/wSTFkRM.png')
         .setFooter('<= Burdaki yakışıklıyı kastetmiştim üstüne alınmadın umarım.', client.user.displayAvatarURL())
-    message.channel.send(embed);
+    message.channel.send({embeds: [embed]});
     }
 });
 ```
@@ -218,9 +218,9 @@ message.guild.emojis
 ![AddEmoji](https://user-images.githubusercontent.com/80279532/134047771-9baa432d-ca1e-4a5d-80d5-9e53ff2b8bc4.png)
 
 ```js
-client.on('message', message => {
+client.on('messageCreate', message => {
     if (message.content === 'Hey Mob! Bu sunucuya güzel bir emoji ekler misin?') {
-        message.channel.send('Tabiki')
+        message.channel.send({content: 'Tabiki'})
         message.guild.emojis
         .create('https://cdn.discordapp.com/emojis/751979651340959774.png?v=1', 'ZeroDumb')
     }
@@ -248,9 +248,9 @@ client.on('message', message => {
 ![Reactions](https://user-images.githubusercontent.com/80279532/134047886-6d48b259-bfc9-4764-80a8-b4fb11ad5d71.png)
 
 ```js
-client.on('message', message => {
+client.on('messageCreate', message => {
     if (message.content === 'Hey Mob! Bu mesaja tepki ekler misin?') {
-        message.channel.send('Böyle oldu mu?').then(function (message) {
+        message.channel.send({content: 'Böyle oldu mu?'}).then(function (message) {
             message.react('🍪')
           })
     }
@@ -279,7 +279,7 @@ client.on('message', message => {
 ![CatRandom](https://user-images.githubusercontent.com/80279532/134048021-f7cc38bc-6d60-47c5-a1e5-b07437fcee9e.png)
 
 ```js
-client.on('message', message => {
+client.on('messageCreate', message => {
     var CatNames = [
         "Pofuduk Kedi",
         "Şişman Kedi",
@@ -289,10 +289,10 @@ client.on('message', message => {
        var RandomCatName = CatNames[Math.floor(Math.random(1) * CatNames.length)]
 
        if(message.content === 'Hey Mob! Sence ben nasıl bir kedi severim?'){
-       message.channel.send(`${RandomCatName}`)
+       message.channel.send({content: `${RandomCatName}`})
        }
        if(message.content === 'Tekrar denemek ister misin?') {
-       message.channel.send(`${RandomCatName}`)
+       message.channel.send({content: `${RandomCatName}`})
        }
 })
 ```
@@ -323,7 +323,7 @@ client.on('message', message => {
   ![CatInfo](https://user-images.githubusercontent.com/80279532/134048098-d3d49dc1-5fe1-46e2-aee9-c271b92e1cc2.png)
   
   ```js
-  client.on('message', message => {
+  client.on('messageCreate', message => {
     var CatNames = [
         "Pofuduk Kedi",
         "Şişman Kedi",
@@ -337,10 +337,10 @@ client.on('message', message => {
        if(RandomCatName === 'Vahşi Kedi') { var CatInfo = 'Yetişkin bir aslanın ısırığı, herhangi bir ev kedisinin ısırığından 30 kat daha güçlüdür. Aslanlar hayatı boyunca ortalama 3.000 kez çiftleşir. Bir aslan 3 metre boya kadar ulaşabilir. Aslanlar, her gün en az 10 saat uyumaktadır' }
 
        if(message.content === 'Hey Mob! Bir kedi hakkında bilgi verir misin?'){
-       message.channel.send(`**${RandomCatName}**\n${CatInfo}`)
+       message.channel.send({content: `**${RandomCatName}**\n${CatInfo}`})
        }
        if(message.content === 'Teşekkürler, bir tane daha kedi hakkında bilgi verir misin?'){
-        message.channel.send(`**${RandomCatName}**\n${CatInfo}`)
+        message.channel.send({content:`**${RandomCatName}**\n${CatInfo}`})
         }
     })
   ```
@@ -350,7 +350,7 @@ client.on('message', message => {
 **🤓 | Kolay Yol**
   
 ```js
-  client.on('message', message => {
+  client.on('messageCreate', message => {
 var Cats = [
       {
         Name: "Pofuduk Kedi",
@@ -368,10 +368,10 @@ var Cats = [
        var RandomCat = Cats[Math.floor(Math.random(1) * Cats.length)]
        
        if(message.content === 'Hey Mob! Bir kedi hakkında bilgi verir misin?'){
-       message.channel.send(`**${RandomCat.Name}**\n${RandomCat.Info}`)
+       message.channel.send({content: `**${RandomCat.Name}**\n${RandomCat.Info}`})
        }
        if(message.content === 'Teşekkürler, bir tane daha kedi hakkında bilgi verir misin?'){
-        message.channel.send(`**${RandomCat.Name}**\n${RandomCat.Info}`)
+        message.channel.send({content: `**${RandomCat.Name}**\n${RandomCat.Info}`})
         }
     })
 
@@ -389,12 +389,12 @@ var RandomNumber = Math.floor(Math.random() * 10) + 0;
 
 
   ```js
-client.on('message', message => {
+client.on('messageCreate', message => {
   
   var RandomNumber = Math.floor(Math.random() * 10) + 0;
        
   if(message.content === 'Hey Mob! Beni 10 üzerinden puanlar mısın?'){
-       message.channel.send(`Sana verdiğim puan: ${RandomNumber}`)
+       message.channel.send({content: `Sana verdiğim puan: ${RandomNumber}`})
        }
     })
   ```
