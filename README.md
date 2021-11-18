@@ -201,7 +201,7 @@ client.on("message", message => {
 
 ## 😀 | Emojiler & Tepkiler
 
-> ## Emoji eklemek
+> ## 😋 | Emoji eklemek
 ```js
 message.guild.emojis
   .create('emojiLink', 'emojiName')
@@ -231,12 +231,12 @@ client.on('message', message => {
 
 🏷️ | **İstediğiniz mesaja tepki ekleyebilirsiniz. Bu bir kullanıcınında mesajı olabilir, botunuzun mesajıda.**
 
-> ### Mesajı gönderen kişinin mesajına tepki ekler.
+> ### ✏️ | Mesajı gönderen kişinin mesajına tepki ekler.
 ```js
       message.react('🍪')
   ```
   
-> ### Botun mesajına tepki ekler.
+> ### 🤖 | Botun mesajına tepki ekler.
   ```js
       .then(function (message) {
             message.react('🍪')
@@ -262,7 +262,7 @@ client.on('message', message => {
 
 ## 🔀 | Rastgele Seçim Uygulamak
 
-> ## **Yazılanlardan rastgele birini seçmek**
+> ## 🔀 | **Yazılanlardan rastgele birini seçmek**
   ```js
   var CatNames = [
    "Pofuduk Kedi",
@@ -345,7 +345,7 @@ client.on('message', message => {
     })
   ```
   
- 🏷️**Az önceki kullandığımız "\n" satır atlamaya yarar. "ctrl + alt + \*" ile ters slash (\) koyabilirsiniz. Diğer kesme işaretleri içinde (" veya ') içinde satır atlayamazsınız. İtediğiniz gibi yazabilmeniz için "ctrl + alt + , + space" içine yazarakta bunu yapabilirsiniz. Ayrıca tanıttıktan sonra onu kullanmak için yazdığımız **${}** sadece "\`" içerisinde iken çalışır.**
+ 🏷️ | **Az önceki kullandığımız "\n" satır atlamaya yarar. "ctrl + alt + \*" ile ters slash (\) koyabilirsiniz. Diğer kesme işaretleri içinde (" veya ') içinde satır atlayamazsınız. İtediğiniz gibi yazabilmeniz için "ctrl + alt + , + space" içine yazarakta bunu yapabilirsiniz. Ayrıca tanıttıktan sonra onu kullanmak için yazdığımız **${}** sadece "\`" içerisinde iken çalışır.**
  
 **🤓 | Kolay Yol**
   
@@ -401,16 +401,16 @@ client.on('message', message => {
   
   ## **📎 | Fonksyonlar**
 
-> ## Kullanıcı
+> ## 👤 | Kullanıcı
 
-🏷️**Kullanıcılar için olan fonksyonlar ikiye ayrılır, bunlar message.author ve message.member'dır**
+🏷️ | **Kullanıcılar için olan fonksyonlar ikiye ayrılır, bunlar message.author ve message.member'dır**
 
-**Mesajı gönderen kişi**
+**✏️ | Mesajı gönderen kişi**
 ```js
 message.author
   ```
   
-**Mesajı gönderen ve sunucuda olan kişi.**
+**🖊️ | Mesajı gönderen ve sunucuda olan kişi.**
 ```js
 message.member
   ```
@@ -427,9 +427,9 @@ Kullanıcının ID'si | message.author.id | message.member.id | 5281180807069696
 Kullanıcının Avatarı | message.author.displayAvatarURL() | message.member.displayAvatarURL() | <img src="https://media.pocketgamer.biz/2021/5/110514/discord-new-logo-2021-r225x.jpg" width="48">
 
 
-> ## Sunucu
+> ## 📁 | Sunucu
 
-🏷️**Sunucu bilgi komutları bunun ile yapılır ve tektir.**
+🏷️ | **Sunucu bilgi komutları bunun ile yapılır ve tektir.**
 
 > **📜 | Sunucu Fonksyon Tablosu**
 
