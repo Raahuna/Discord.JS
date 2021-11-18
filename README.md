@@ -507,14 +507,14 @@ message.member
 
 > **📜 | Kullanıcı Fonksyon Tablosu**
 
-message.author | message.member | Sonuç
------------- | ------------ | ------------
-message.author.username | message.member.user.username | Rahuna
-message.author.discriminator | message.member.user.discriminator | 3434
-message.author.tag | message.member.user.tag | Rahuna#3434
-❌ | message.member.displayName | Selam ben Kiraz🍒
-message.author.id | message.member.id | 528118080706969600
-message.author.displayAvatarURL() | message.member.displayAvatarURL() | <img src="https://media.pocketgamer.biz/2021/5/110514/discord-new-logo-2021-r225x.jpg" width="48">
+Anlam | message.author | message.member | Sonuç
+--------- | ------------ | ------------ | ------------
+Kullanıcı Adı | message.author.username | message.member.user.username | Rahuna
+Kullanıcı Etiketi | message.author.discriminator | message.member.user.discriminator | 3434
+Kullanıcının İsimi | message.author.tag | message.member.user.tag | Rahuna#3434
+Kullanıcının Sunucudaki Adı | ❌ | message.member.displayName | Selam ben Kiraz🍒
+Kullanıcının ID'si | message.author.id | message.member.id | 528118080706969600
+Kullanıcının Avatarı | message.author.displayAvatarURL() | message.member.displayAvatarURL() | <img src="https://media.pocketgamer.biz/2021/5/110514/discord-new-logo-2021-r225x.jpg" width="48">
 
 
 > ## Sunucu
@@ -533,15 +533,15 @@ message.member
 
 > **📜 | Sunucu Fonksyon Tablosu**
 
-guild | Sonuç
------------- | ------------
-message.guild.name | Mob Support 100
-message.guild.ownerId | 528118080706969600
-message.guild.memberCount | 43
-message.guild.createdAt | Tue Jan 12 2021 14:22:56 GMT+0300 (GMT+03:00)
-message.guild.description | This server is a great place to get help, chat, make suggestions etc. about Mob.
-message.guild.roles.cache.size | 25
-message.guild.channel.cahce.size | 
-message.guild.emojis.cache.size
-message.guild.id | 798512336095805460
-message.guild.iconURL() | <img src="https://cdn.discordapp.com/icons/798512336095805460/ce61b6185c582e7bc5d15e3cddc6bbfd.webp" width="48">
+Anlam | guild | Sonuç
+------------ | ------------ | -------------
+Sunucu İsimi | message.guild.name | Mob Support 100
+Sunucu Sahibinin ID'si | message.guild.ownerId | 528118080706969600
+Sunucudaki Toplam Kişi | message.guild.memberCount | 43
+Sunucunun Açılma Tarihi | message.guild.createdAt | Tue Jan 12 2021 14:22:56 GMT+0300 (GMT+03:00)
+Sunucunun Açıklaması | message.guild.description | This server is a great place to get help, chat, make suggestions etc. about Mob.
+Sunucudaki Toplam Rol | message.guild.roles.cache.size | 25
+Sunucudaki Toplam Kanal | message.guild.channels.cache.size | 42
+Sunucudaki Toplam Emoji | message.guild.emojis.cache.size | 50
+Sunucunun ID'si | message.guild.id | 798512336095805460
+Sunucunun Avatarı| message.guild.iconURL() | <img src="https://cdn.discordapp.com/icons/798512336095805460/ce61b6185c582e7bc5d15e3cddc6bbfd.webp" width="48">
