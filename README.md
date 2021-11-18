@@ -521,16 +521,6 @@ Kullanıcının Avatarı | message.author.displayAvatarURL() | message.member.di
 
 🏷️**Sunucu bilgi komutları bunun ile yapılır ve tektir.**
 
-**Mesajı gönderen kişi**
-```js
-message.author
-  ```
-  
-**Mesajı gönderen ve sunucuda olan kişi.**
-```js
-message.member
-  ```
-
 > **📜 | Sunucu Fonksyon Tablosu**
 
 Anlam | guild | Sonuç
