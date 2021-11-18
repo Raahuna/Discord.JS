@@ -125,3 +125,5 @@
 ## **❣️ | Botunu Aktifleştir**
 
 Henüz boş... \*Sessizlik sesleri
+
+[Devam Et...](https://github.com/raahuna/discord.js)
