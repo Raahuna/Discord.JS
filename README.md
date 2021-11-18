@@ -3,7 +3,7 @@
 # 👋 | Selam burada Discord JS ile alakalı bilgileri paylaşıyorum. Bir başlangıç yeri seç! 
 - **[En baştan başlamak istiyorum!](https://github.com/Raahuna/Discord.JS#-kendi-botunu-oluştur)**
 - **[Botumu oluşturdum devamı için bir şey yapmadım](https://github.com/Raahuna/Discord.JS#-botunu-sunucuna-ekle)**
-- **[Discord JS hakkındaki bilgimi geliştirmek istiyorun](https://github.com/Raahuna/Discord.JS#yazılar-ve-argümanlar)**
+- **[Discord JS hakkındaki bilgimi geliştirmek istiyorun](https://github.com/Raahuna/Discord.JS#--yazılar-ve-argümanlar)**
 
 # ⏩ Başlangıç
 
