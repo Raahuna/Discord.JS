@@ -89,8 +89,8 @@ var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 console.log(text.replace('çabucak güvendi', 'sarıldı')) //Pijamalı hasta, yağız şoföre sarıldı.
 ``` 
 
-<details>
-## *️⃣ | Gömülü Mesaj
+<details> 
+  <summary>## *️⃣ | Gömülü Mesaj </summary>
 
 🏷️ | **Gömülü mesajlar botunuzun daha şık gözükmesini sağlar.**
 
