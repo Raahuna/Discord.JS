@@ -106,14 +106,23 @@
 **Açılan pencereye "npm init" yazın, kısa bir süre bekledikten sonra size bir kaç şey soracak**
 
 **package name: (Türkçe karakterler ve boşluk kullanmadan bir ad girin.)**
+
 **version: (Uhm... ne işe yaradığını bilmiyorum "0.0.1" yazıyorum hep.)**
+
 **description: (Bu paketinizin açıklamasıdır boş bırakılabilir.)**
+
 **entry point: (Sizin ana dosyanızın adıdır. Genellikle buraya bot.js, server.js, index.js vb. yazarlar. Sonda ".js" olmalı)**
+
 **test command: (Terminalinizden çalıştırırken nasıl çalıştıracağınızı ayarlayın. node "main dosyanızın adı" şeklinde ayarlayabilirsiniz.)**
+
 **git repostory: (Bunu şu anlık boş bırakabilirsiniz.)**
+
 **keywords: (Bunuda boş bırakabilirsiniz.)**
+
 **author: (Kendi adınızı yazın.)**
+
 **license: ("ISC" yazın.)**
+
 **Is this OK? (Her şey hazır onaylamanız için "yes" yazın.)**
 
 <img src="https://user-images.githubusercontent.com/80279532/142384435-8bd0eb08-11a8-413f-b920-52043bb0aadb.png" width="500">
