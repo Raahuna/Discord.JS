@@ -89,6 +89,7 @@ var text = "Pijamalı hasta, yağız şoföre çabucak güvendi.";
 console.log(text.replace('çabucak güvendi', 'sarıldı')) //Pijamalı hasta, yağız şoföre sarıldı.
 ``` 
 
+<details>
 ## *️⃣ | Gömülü Mesaj
 
 🏷️ | **Gömülü mesajlar botunuzun daha şık gözükmesini sağlar.**
@@ -148,6 +149,7 @@ console.log(text.replace('çabucak güvendi', 'sarıldı')) //Pijamalı hasta, y
   ```
   
   **Sadece **.setTimestamp()** yazarsanız bu günün tarihini atacaktır**
+  </details>
   
   > ### 🎨 | Renk
 ```js
