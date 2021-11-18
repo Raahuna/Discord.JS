@@ -91,7 +91,7 @@
 
 <img src="https://user-images.githubusercontent.com/80279532/142194634-aeef3028-2249-475f-9adf-efed97e87da5.png" width="250">
 
-## ❣️ | Botunu Aktifleştir.
+## 📦 | Botun İçin Paket Kur.
 
 📁 | **Bir Klasör Oluştur**
 
@@ -129,7 +129,9 @@
 
 **Klasörünüzü tekrar açtığında bir adet "package" adlı bir dosya görüyorsanız başardınız demektir! Ama dur, daha bitmedi şimdi ise PowerShell penceresine bu sefer "npm install discord.js" yazıyoruz bu discord.js kütüphanesini indirmemizi sağlayacak, biraz beklediğinizde bitecek. Bittiği zaman klasörünüzde üç dosya olmuş olacak "node_modules", "package", "package-lock" dosyalarını görüyorsanız artık PowerShell pencresini kapatabilirsiniz. Hiç dosya görmüyor musun? Ümidini kesme Discord'dan (Rahuna#3434) bana DM atabilir yada GitHub'dan soru açabilirsin.**
 
-## **🟢 | Botu Aktifleştirme**
+## **❣️ | Botunu Aktifleştir**
+
+Henüz boş... \*Sessizlik sesleri
 
 ## 📝 | Yazılar ve Argümanlar
 
