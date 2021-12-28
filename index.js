@@ -12,17 +12,24 @@ require('./Events/eventLoader.js')(client);
 
 const Panel = {
   //Hepsi sadece "true" veya "false" olabilir.
-  "Show_Bot_DM": true, //Bu değer "true" olursa bota özel mesaj geldiğinde "Log_Channel" değerindeki ID numarasına mesaj gelir.
+  "Show_Bot_DM": false, //Bu değer "true" olursa bota özel mesaj geldiğinde "Log_Channel" değerindeki ID numarasına mesaj gelir.
   "Show_Guild_Log": false, //Bu değer "true" olursa bot sunucuya eklendiğinde "Log_Channel" değerindeki ID numarasına mesaj gelir.
-  "Reload_Comamnds": true, //Bu değer "true" olursa komutlarda değişiklik yapıldığında yeniden yükler. (Bu mod aktifken bir hata çıkarıp 8 saniye içerisinde çözemezsen sistem çöker.)
+  "Reload_Comamnds": false, //Bu değer "true" olursa komutlarda değişiklik yapıldığında yeniden yükler. (Bu mod aktifken bir hata çıkarıp 8 saniye içerisinde çözemezsen sistem çöker.)
   "Meditation_Mode": false, //Bu değer "true" olursa Bot mesajları cevaplamaz.
   "Log_Channel": "CONSOLE" //"Show_Bot_Dm", "Show_Guild_Log" vs. özelliklerin hangi Discord kanalına kayıt edileceğini seçmek için kanal ID numarasını yazınız. Eğer mesajlarınızın konsola gelmesini istiyorsanız "CONSOLE" yazın.
 }
 module.exports = Panel;
 
-//-------------------- Etiket = Ön ek --------------------//
 
 client.on("messageCreate", message => { //Client on ile “messageCreate” olayına bir dinleyici koyalım. 
+
+//-------------------- Meditasyon Modu --------------------//
+
+if (Panel.Meditation_Mode === true) {
+  return;
+}
+
+//-------------------- Etiket = Ön ek --------------------//
 
   if (message.guild) {
     let Prefix = config.Bot.Prefix; //Botun ön eki
@@ -57,13 +64,6 @@ client.on("messageCreate", message => { //Client on ile “messageCreate” olay
       }
       client.channels.cache.get(Panel.Log_Channel).send({ embeds: [embed] });
     }
-  }
-
-//-------------------- Meditasyon Modu --------------------//
-
-  if (Panel.Meditation_Mode === true) {
-    message.react('😴')
-    return;
   }
 });
 
