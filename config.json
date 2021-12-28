@@ -1,0 +1,7 @@
+{
+    "Bot": {
+        "TOKEN": "TOKEN",
+        "Prefix": "+",
+        "EmbedColor": "RANDOM"
+    }
+}
