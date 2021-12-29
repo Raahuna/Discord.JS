@@ -124,11 +124,12 @@
 
 ## **🗃️ | Dosyaları Oluştur**
 
-😎 | [Dosyaları Kendim Oluşturmak İstiyorum!]()
+🤓 | **Kolay Yol**
 
-🤓 | [Dosyaları İndirmek İstiyorum!]()
 
-Visual Studio uygulamasını açtığınız zaman
+😎 | **Zor Yol**
+
+**Visual Studio uygulamasını açtığınız zaman "(Basılı Tut)ctrl + k + o" tuşuna basın veya yukarıdaki seçenekler barında "Dosya(Folder olarakta gözükebilir)" seçeneğini seçip, açılan menüden "Klasör Aç (Open Folder olarakta gözükebilir)" seçeneğine tıkladığınızda dosyalarınız karşınıza çıkacaktır. Ardından botunuzun dosyasını seçip açın, soldaki barda "package.json" ve "package-lock.json" dosyaları gözükecektir, onun altında boş bir alana farenizin sağ tuşu ile tıklayıp "Yeni Dosya (New File olarakda gözükebilir) seçeneğine tıklayın, hatırlıyor (📟 | **NPM ile kurulum**)[] kısmında "entry point" için bir dosya adı seçmiştik şimdi aynı dosya adını buraya yazıp dosyanızı oluşturun. Buraya tıklayıp içine ne yazılacağını görebilirsiniz. => [İçine yazılması Gereken Kod]() **
 
 ## **❣️ | Botunu Aktifleştir**
 
