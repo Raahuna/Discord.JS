@@ -146,7 +146,7 @@
 
 📄 | **eventLoader.js**
 
-**Bu botun karşılaştığı olaylarda sistemi bir dosyaya çekip işlem yapmamızı sağlayacak. Buraya tıklayıp içine ne yazılacağını görebilirsiniz. => [İçine Yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/Events/eventLoader.js).
+**Bu botun karşılaştığı olaylarda sistemi bir dosyaya çekip işlem yapmamızı sağlayacak. Buraya tıklayıp içine ne yazılacağını görebilirsiniz. => [İçine Yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/Events/eventLoader.js).**
 
 📄 | **ready.js**
 
