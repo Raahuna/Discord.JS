@@ -2,6 +2,7 @@
     "Bot": {
         "TOKEN": "TOKEN",
         "Prefix": "+",
+        "OwnerID": "123456789",
         "EmbedColor": "RANDOM"
     }
 }
