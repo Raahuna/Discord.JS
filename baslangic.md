@@ -122,6 +122,14 @@
 
 **Klasörünüzü tekrar açtığında bir adet "package" adlı bir dosya görüyorsanız başardınız demektir! Ama dur, daha bitmedi şimdi ise PowerShell penceresine bu sefer "npm install discord.js" yazıyoruz bu discord.js kütüphanesini indirmemizi sağlayacak, biraz beklediğinizde bitecek. Bittiği zaman klasörünüzde üç dosya olmuş olacak "node_modules", "package", "package-lock" dosyalarını görüyorsanız artık PowerShell pencresini kapatabilirsiniz. Hiç dosya görmüyor musun? Ümidini kesme Discord'dan (Rahuna#3434) bana DM atabilir yada GitHub'dan soru açabilirsin.**
 
+## **🗃️ | Dosyaları Oluştur**
+
+😎 | [Dosyaları Kendim Oluşturmak İstiyorum!]()
+
+🤓 | [Dosyaları İndirmek İstiyorum!]()
+
+Visual Studio uygulamasını açtığınız zaman
+
 ## **❣️ | Botunu Aktifleştir**
 
 Henüz boş... \*Sessizlik sesleri
