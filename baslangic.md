@@ -1,6 +1,6 @@
 # ⏩ Başlangıç
 
-## 🤖 Kendi botunu oluştur.
+## 🤖 Kendi botunu oluştur
 
 🏷️ | *Botlar, sunucunuzda otomatik olarak birçok yararlı görevi gerçekleştirebilen yararlı yapay zekadır. Bu, yeni üyeleri karşılamayı, sorun çıkaranları yasaklamayı ve tartışmayı yönetmeyi içerir. Hatta bazı botlar sunucunuza müzik veya oyunlar ekler.*
 
@@ -33,6 +33,12 @@
 <img src="https://user-images.githubusercontent.com/80279532/141976689-31cd403a-8e37-43fd-8ee6-549de6d055d0.png" width="550">
 
 ⚙️ | **Heh şimdi oldu "Add Bot" seçeneğine tıklayıp "Yes, do it!"  dediğinizde her şey hazır olacak!**
+
+🦉 | **Ekstra bilgi**
+
+🖥️ | **Aşağıdaki kapama açma tuşları görseldeki gibi olmalı, "Copy" seçeneği ile tokeninizi kopyalayabilirsiniz. Not: Tokenin senin botunun şifresi gibidir, eğer birisi tokenine erişirse kodlarına eklemeler yapabilir, eğer tokeninin çalındığını düşünüyorsan "Regenerate" butonuna tıklayıp yenileyebilirsin.**
+
+<img src="https://user-images.githubusercontent.com/80279532/147645668-8a78617f-28a1-416d-a524-bbc6ba04a8f6.png" width="550">
 
 ## 🤖 Botunu Sunucuna Ekle.
 
@@ -112,9 +118,9 @@
 
 **keywords: (Bunuda boş bırakabilirsiniz.)**
 
-**author: (Kendi adınızı yazın.)**
+**author: (Kendi adınızı ya da nickinizi yazınız.)**
 
-**license: ("ISC" yazın.)**
+**license: ("ISC" yazınız.)**
 
 **Is this OK? (Her şey hazır onaylamanız için "yes" yazın.)**
 
@@ -129,7 +135,16 @@
 
 😎 | **Zor Yol**
 
-**Visual Studio uygulamasını açtığınız zaman "(Basılı Tut)ctrl + k + o" tuşuna basın veya yukarıdaki seçenekler barında "Dosya(Folder olarakta gözükebilir)" seçeneğini seçip, açılan menüden "Klasör Aç (Open Folder olarakta gözükebilir)" seçeneğine tıkladığınızda dosyalarınız karşınıza çıkacaktır. Ardından botunuzun dosyasını seçip açın, soldaki barda "package.json" ve "package-lock.json" dosyaları gözükecektir, onun altında boş bir alana farenizin sağ tuşu ile tıklayıp "Yeni Dosya (New File olarakda gözükebilir) seçeneğine tıklayın, hatırlarsan [📟 | NPM ile kurulum](https://github.com/Raahuna/Discord.JS/blob/main/baslangic.md#--botun-i̇çin-paket-kur) kısmında "entry point" için bir dosya adı seçmiştik, şimdi aynı dosya adını buraya yazıp dosyanızı oluşturun. Buraya tıklayıp içine ne yazılacağını görebilirsiniz. => [İçine yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/index.js)**
+**Visual Studio uygulamasını açtığınız zaman "(Basılı Tut)ctrl + k + o" tuşuna basın veya yukarıdaki seçenekler barında "Dosya(Folder olarakta gözükebilir)" seçeneğini seçip, açılan menüden "Klasör Aç (Open Folder olarakta gözükebilir)" seçeneğine tıkladığınızda dosyalarınız karşınıza çıkacaktır.
+
+📄 | **index.js**
+
+**Botunuzun dosyasını seçip açın, soldaki barda "package.json" ve "package-lock.json" dosyaları gözükecektir, onun altında boş bir alana farenizin sağ tuşu ile tıklayıp "Yeni Dosya (New File olarakda gözükebilir) seçeneğine tıklayın, hatırlarsan [📟 | NPM ile kurulum](https://github.com/Raahuna/Discord.JS/blob/main/baslangic.md#--botun-i̇çin-paket-kur) kısmında "entry point" için bir dosya adı seçmiştik, şimdi aynı dosya adını buraya yazıp dosyanızı oluşturun. Buraya tıklayıp içine ne yazılacağını görebilirsiniz. => [İçine Yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/index.js)**
+
+📄 | **config.json**
+
+**Ana dosya tamamdır, şimdi ise az önce yaptığımız gibi bir dosya oluşturup adını "config.json" yapıyoruz. Json dosyalarında değerlerin karşılıklarını kolaylıkla saklayabilirsin biz json dosyamızı token, ön ek, botun sahibi (sahipler için özel komutları çalıştırmak için) ve gömülü mesaj rengini ayarlamak için kullanacağız. [İçine yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/config.json). "TOKEN" karşısına botunuzun tokenini yapıştırınız, Tokene bakmayı bilmiyorsan [🤖 Kendi botunu oluştur](https://github.com/Raahuna/Discord.JS/blob/main/baslangic.md#--kendi-botunu-oluştur)** kısımında "🦉 | **Ekstra bilgi**" yerini okuyabilirsiniz. "OwnerID" karşısına kendi kullanıcı ID numaranızı yapıştırınız, "Prefix" karşısına ön ekinizi yapıştırınız Örnek: "!yardım" komutundaki "!" ön ektir, "EmbedColor" karşısına ise bir hex rengi girin ya da "RANDOM" olarak bırakabilirsiniz.**
+
 
 ## **❣️ | Botunu Aktifleştir**
 
