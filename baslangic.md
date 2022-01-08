@@ -138,7 +138,7 @@
 
 📄 | **config.json**
 
-**Ana dosya tamamdır, şimdi ise az önce yaptığımız gibi bir dosya oluşturup adını `config.json` yapıyoruz. Json dosyalarında değerlerin karşılıklarını kolaylıkla saklayabilirsin biz json dosyamızı token, ön ek, botun sahibi (sahipler için özel komutları çalıştırmak için) ve gömülü mesaj rengini ayarlamak için kullanacağız, [İçine Yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/Bot%20Files/config.json). `TOKEN` karşısına botunuzun tokenini yapıştırınız, Tokene bakmayı bilmiyorsan [🤖 Kendi botunu oluştur](https://github.com/Raahuna/Discord.JS/blob/main/baslangic.md#-kendi-botunu-oluştur)** kısımında "🦉 | **Ekstra bilgi**" yerini okuyabilirsiniz. `OwnerID` karşısına kendi kullanıcı ID numaranızı yapıştırınız, "Prefix" karşısına ön ekinizi yapıştırınız Örnek: "!yardım" komutundaki "!" ön ektir, "EmbedColor" karşısına ise bir hex rengi girin ya da "RANDOM" olarak bırakabilirsiniz.**
+**Ana dosya tamamdır, şimdi ise az önce yaptığımız gibi bir dosya oluşturup adını `config.json` yapıyoruz. Json dosyalarında değerlerin karşılıklarını kolaylıkla saklayabilirsin biz json dosyamızı token, ön ek, botun sahibi (sahipler için özel komutları çalıştırmak için) ve gömülü mesaj rengini ayarlamak için kullanacağız, [İçine Yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/Bot%20Files/config.json). `TOKEN` karşısına botunuzun tokenini yapıştırınız, Tokene bakmayı bilmiyorsan [🤖 Kendi botunu oluştur](https://github.com/Raahuna/Discord.JS/blob/main/baslangic.md#-kendi-botunu-oluştur)** kısımında "🦉 | **Ekstra bilgi**" yerini okuyabilirsiniz. `OwnerID` karşısına kendi kullanıcı ID numaranızı yapıştırınız, "Prefix" karşısına ön ekinizi yapıştırınız Örnek: "!yardım" komutundaki "!" ön ektir, `EmbedColor` karşısına ise bir hex rengi girin ya da `RANDOM` olarak bırakabilirsiniz.**
 
 📁 | **Events**
 
@@ -192,6 +192,10 @@ exports.help = {
 
 ## **❣️ | Botunu Aktifleştir**
 
-Henüz boş... \*Sessizlik sesleri
+📟 **| Botunuzu terminalden aktifleştirebilirsiniz, terminali açmak için `ctrl + shift + "` tuşlarına teker teker basınız, altta bir bar açılacak oraya `node .` veya `node "ana dosya".js` yazıp `enter` tuşuna basınız, yaklaşık 20 saniye sonra eğer hâlâ ✅ emojisi ile yeşil bir yazı görmüyorsanız, veya hata olarak büyük harflerle İngilizce yazılar görüyorsabız hata verdi demek. Destek için Discord üzerinden Rahuna#3434 kullanıcısına DM atıp sorunu bildirebilirsiniz.**
+
+🥁 | **Hata almadınız ve ✅ emojisi ile "Uygulama Aktifleştirildi" yazısını gördüyseniiiz... İŞTE HER ŞEY HAZIR VE BOT ÇALIŞIYOR!!!**
+
+
 
 [Devam Et...](https://github.com/raahuna/discord.js)
