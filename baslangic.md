@@ -142,7 +142,7 @@
 
 📁 | **Events**
 
-**Bu sefer bir klasör oluşturacaksınız, tıpkı dosya oluşturmak gibi ama "Yeni Dosya" yerine "Yeni Klasör (New Folder olarakda gözükebilir)" seçeneğini seçin, İsmini ise "Events" yapın.**
+**Bu sefer bir klasör oluşturacaksınız, tıpkı dosya oluşturmak gibi ama "Yeni Dosya" yerine "Yeni Klasör (New Folder olarakda gözükebilir)" seçeneğini seçin, ismini ise "Events" yapın.**
 
 📄 | **eventLoader.js**
 
@@ -155,6 +155,40 @@
 📄 | **messageCreate.js**
 
 **Mesaj gönderildiğinde "eventLoader" dosyasındaki dinleyici bu dosyayı çalıştıracaktır, komutları denetler ve çalışmasını sağlar bu dosya içindeki kodlar olmadan komutlara tepki veremez. [İçine Yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/Bot%20Files/Events/ready.js)**
+
+📁 | **Commands**
+
+**Tekrar bir klasör oluşturup adını `Commands` yapınız, ve içine bir `Category-1` ve `Category-2` klasörlerini açınız (adını değiştirebilirsiniz veya ), eğer klasör içine klasör açmakta zorlanıyorsan masaüstüne gelip botun klasörünün içinden bu işlemleri yapabilirsiniz.**
+
+📁 | **Category-1**
+
+**Test için içine bir dosya oluşturup bir kod yazabiliriz, `Category-1` içine `ping.js` adında bir dosya açınız.**
+
+```js
+const Discord = require('discord.js');
+const config = require('../../config.json');
+exports.run = function (client, message) {
+
+    const embed = new Discord.MessageEmbed()
+        .setColor(config.Bot.EmbedColor)
+        .setDescription(`🏓Pong! **${client.ws.ping}ms**`)
+    message.channel.send({ embeds: [embed] })
+
+};
+
+exports.conf = {
+    OutOfOrder: false,
+    GuildOnly: false,
+    Aliases: ['ms'],
+    Permissions: null,
+};
+
+exports.help = {
+    Name: 'ping',
+    Description: 'Botun gecikme süresini gösterir.',
+    Usage: 'ping'
+};
+```
 
 ## **❣️ | Botunu Aktifleştir**
 
