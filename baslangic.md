@@ -134,11 +134,11 @@
 
 📄 | **index.js**
 
-**Botunuzun dosyasını seçip açın, soldaki barda "package.json" ve "package-lock.json" dosyaları gözükecektir, onun altında boş bir alana farenizin sağ tuşu ile tıklayıp "Yeni Dosya (New File olarakda gözükebilir) seçeneğine tıklayın, hatırlarsan [📟 | NPM ile kurulum](https://github.com/Raahuna/Discord.JS/blob/main/baslangic.md#--botun-i̇çin-paket-kur) kısmında "entry point" için bir dosya adı seçmiştik, şimdi aynı dosya adını buraya yazıp dosyanızı oluşturun. Buraya tıklayıp içine ne yazılacağını görebilirsiniz. => [İçine Yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/index.js)**
+**Botunuzun dosyasını seçip açın, soldaki barda "package.json" ve "package-lock.json" dosyaları gözükecektir, onun altında boş bir alana farenizin sağ tuşu ile tıklayıp "Yeni Dosya (New File olarakda gözükebilir) seçeneğine tıklayın, hatırlarsan [📟 | NPM ile kurulum](https://github.com/Raahuna/Discord.JS/blob/main/baslangic.md#--botun-i̇çin-paket-kur) kısmında "entry point" için bir dosya adı seçmiştik, şimdi aynı dosya adını buraya yazıp dosyanızı oluşturun. [İçine Yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/Bot%20Files/index.js)**
 
 📄 | **config.json**
 
-**Ana dosya tamamdır, şimdi ise az önce yaptığımız gibi bir dosya oluşturup adını "config.json" yapıyoruz. Json dosyalarında değerlerin karşılıklarını kolaylıkla saklayabilirsin biz json dosyamızı token, ön ek, botun sahibi (sahipler için özel komutları çalıştırmak için) ve gömülü mesaj rengini ayarlamak için kullanacağız, Buraya tıklayıp içine ne yazılacağını görebilirsiniz. => [İçine Yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/config.json). "TOKEN" karşısına botunuzun tokenini yapıştırınız, Tokene bakmayı bilmiyorsan [🤖 Kendi botunu oluştur](https://github.com/Raahuna/Discord.JS/blob/main/baslangic.md#-kendi-botunu-oluştur)** kısımında "🦉 | **Ekstra bilgi**" yerini okuyabilirsiniz. "OwnerID" karşısına kendi kullanıcı ID numaranızı yapıştırınız, "Prefix" karşısına ön ekinizi yapıştırınız Örnek: "!yardım" komutundaki "!" ön ektir, "EmbedColor" karşısına ise bir hex rengi girin ya da "RANDOM" olarak bırakabilirsiniz.**
+**Ana dosya tamamdır, şimdi ise az önce yaptığımız gibi bir dosya oluşturup adını "config.json" yapıyoruz. Json dosyalarında değerlerin karşılıklarını kolaylıkla saklayabilirsin biz json dosyamızı token, ön ek, botun sahibi (sahipler için özel komutları çalıştırmak için) ve gömülü mesaj rengini ayarlamak için kullanacağız, [İçine Yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/Bot%20Files/config.json). "TOKEN" karşısına botunuzun tokenini yapıştırınız, Tokene bakmayı bilmiyorsan [🤖 Kendi botunu oluştur](https://github.com/Raahuna/Discord.JS/blob/main/baslangic.md#-kendi-botunu-oluştur)** kısımında "🦉 | **Ekstra bilgi**" yerini okuyabilirsiniz. "OwnerID" karşısına kendi kullanıcı ID numaranızı yapıştırınız, "Prefix" karşısına ön ekinizi yapıştırınız Örnek: "!yardım" komutundaki "!" ön ektir, "EmbedColor" karşısına ise bir hex rengi girin ya da "RANDOM" olarak bırakabilirsiniz.**
 
 📁 | **Events**
 
@@ -146,12 +146,15 @@
 
 📄 | **eventLoader.js**
 
-**Bu botun karşılaştığı olaylarda sistemi bir dosyaya çekip işlem yapmamızı sağlayacak. Buraya tıklayıp içine ne yazılacağını görebilirsiniz. => [İçine Yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/Events/eventLoader.js).**
+**Bu botun karşılaştığı olaylarda sistemi bir dosyaya çekip işlem yapmamızı sağlayacak. [İçine Yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/Bot%20Files/Events/eventLoader.js).**
 
 📄 | **ready.js**
 
-**Bot hazır olduğunda "eventLoader" dosyasındaki dinleyici bu dosyayı çalıştıracaktır. "Bla bla oynuyor" yazılarını botun durumu olarak ayarlar. Buraya tıklayıp içine ne yazılacağını görebilirsiniz. => [İçine Yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/Events/ready.js)**
+**Bot hazır olduğunda "eventLoader" dosyasındaki dinleyici bu dosyayı çalıştıracaktır, "Bla bla oynuyor" yazılarını botun durumu olarak ayarlar. [İçine Yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/Bot%20Files/Events/ready.js)**
 
+📄 | **messageCreate.js**
+
+**Mesaj gönderildiğinde "eventLoader" dosyasındaki dinleyici bu dosyayı çalıştıracaktır, komutları denetler ve çalışmasını sağlar bu dosya içindeki kodlar olmadan komutlara tepki veremez. [İçine Yazılması Gereken Kod](https://github.com/Raahuna/Discord.JS/blob/main/Bot%20Files/Events/ready.js)**
 
 ## **❣️ | Botunu Aktifleştir**
 
