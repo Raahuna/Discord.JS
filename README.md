@@ -398,24 +398,14 @@ client.on('messageCreate', message => {
        }
     })
   ```
-  
-  ## **📎 | Fonksyonlar**
+
+## **📎 | Fonksyonlar**
 
 > ## 👤 | Kullanıcı
 
-🏷️ | **Kullanıcılar için olan fonksyonlar ikiye ayrılır, bunlar message.author ve message.member'dır**
+🏷️ | **Kullanıcılar için olan fonksyonlar ikiye ayrılır, bunlar `message.author` ve `message.member`dır. `message.author` Mesajı gönderen kişi `message.member` Mesajı gönderen ve sunucuda olan kişi.**
 
-**✏️ | Mesajı gönderen kişi**
-```js
-message.author
-  ```
-  
-**🖊️ | Mesajı gönderen ve sunucuda olan kişi.**
-```js
-message.member
-  ```
-
-> **📜 | Kullanıcı Fonksyon Tablosu**
+**📜 | Kullanıcı Fonksyon Tablosu**
 
 Anlam | message.author | message.member | Sonuç
 --------- | ------------ | ------------ | ------------
@@ -425,23 +415,28 @@ Kullanıcının İsimi | message.author.tag | message.member.user.tag | Rahuna#3
 Kullanıcının Sunucudaki Adı | ❌ | message.member.displayName | Selam ben Kiraz🍒
 Kullanıcının ID'si | message.author.id | message.member.id | 528118080706969600
 Kullanıcının Avatarı | message.author.displayAvatarURL() | message.member.displayAvatarURL() | <img src="https://media.pocketgamer.biz/2021/5/110514/discord-new-logo-2021-r225x.jpg" width="48">
+| Kullanıcının Rozetleri | message.author.flags.toArray() | message.member.user.flags.toArray() | HOUSE_BRILLIANCE <img src="https://static.wikia.nocookie.net/hypesquad/images/8/8f/BrillianceLogo.png/revision/latest?cb=20180825045035" width="20">
 
+**🦉 Ekstra Bilgi | `message.member` yerine `message.guild.members.cache.get('ID')` veya `message.guild.members.cache.find(member => member.user.username.toLowerCase() === 'Kullanıcı Adı')` yazılabilir `message.member` mesajı gönderenin bilgilerini temsil ederken, bu filtre ile sunucuda olan ve bu değerleri taşıyan kullanıcıyı seçmesini sağlayabiliriz. `message.author` yerine ise `client.users.cache.get("528118080706969600")` veya `client.users.cache.find(user => user.username == "Kullanıcı Adı")`
 
 > ## 📁 | Sunucu
 
-🏷️ | **Sunucu bilgi komutları bunun ile yapılır ve tektir.**
+🏷️ | **Sunucu için olan fonksiyonlar tektir ve kullanıcılardan daha fazla özelliğe sahiptir.**
 
-> **📜 | Sunucu Fonksyon Tablosu**
+**📜 | Sunucu Fonksyon Tablosu**
 
 Anlam | guild | Sonuç
 ------------ | ------------ | -------------
-Sunucu İsimi | message.guild.name | Mob Support 100
+Sunucu İsmi | message.guild.name | Mob Support 100
 Sunucu Sahibinin ID'si | message.guild.ownerId | 528118080706969600
-Sunucudaki Toplam Kişi | message.guild.memberCount | 43
+Sunucudaki Toplam Kişi | message.guild.memberCount | 52
 Sunucunun Açılma Tarihi | message.guild.createdAt | Tue Jan 12 2021 14:22:56 GMT+0300 (GMT+03:00)
 Sunucunun Açıklaması | message.guild.description | This server is a great place to get help, chat, make suggestions etc. about Mob.
+Sunucu Afişi | message.guild.banner | null
+Sunucunun Doğrulama Seviyesi | message.guild.verificationLevel | MEDIUM
 Sunucudaki Toplam Rol | message.guild.roles.cache.size | 25
 Sunucudaki Toplam Kanal | message.guild.channels.cache.size | 42
 Sunucudaki Toplam Emoji | message.guild.emojis.cache.size | 50
 Sunucunun ID'si | message.guild.id | 798512336095805460
-Sunucunun Avatarı| message.guild.iconURL() | <img src="https://cdn.discordapp.com/icons/798512336095805460/ce61b6185c582e7bc5d15e3cddc6bbfd.webp" width="48">
+Sunucunun Avatarı | message.guild.iconURL() | <img src="https://cdn.discordapp.com/icons/798512336095805460/ce61b6185c582e7bc5d15e3cddc6bbfd.webp" width="48">
+
