@@ -183,7 +183,7 @@ console.log(text.replace('çabucak güvendi', 'sarıldı')) //Pijamalı hasta, y
 ![ExampleEmbed](https://user-images.githubusercontent.com/80279532/134047640-069f77cb-fbb2-4c83-8239-7fcf537eb934.png)
 
 ```js
-client.on("message", message => {
+client.on("messageCreate", message => {
 
     if(message.content === 'Hey Mob! Benim için bir gömülü mesaj oluşturur musun?') {
         const embed = new Discord.MessageEmbed()
